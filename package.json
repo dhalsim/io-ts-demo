@@ -1,0 +1,16 @@
+{
+    "scripts": {
+        "start": "node -r ts-node/register --inspect ./index.ts"
+    },
+    "dependencies": {
+        "fp-ts": "2.11.1",
+        "io-ts": "2.2.16",
+        "io-ts-types": "0.5.16",
+        "json-to-pretty-yaml": "1.2.2"
+    },
+    "devDependencies": {
+        "typescript": "4.4.2",
+        "ts-node": "10.2.1",
+        "@types/node": "16.9.0"
+    }
+}
