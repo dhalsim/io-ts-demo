@@ -1,4 +1,3 @@
-
 import * as t from 'io-ts';
 
 export const traveler = t.intersection([
@@ -55,33 +54,37 @@ export const traveler = t.intersection([
       managed: t.boolean,
       newsletter_subscribed: t.boolean
     }),
-    identifications: t.array(t.intersection([
-      t.type({
-        type: t.keyof({
-          passport: null,
-          id_card: null,
-          drivers_license: null,
-          global_entry_ktn: null
+    identifications: t.array(
+      t.intersection([
+        t.type({
+          type: t.keyof({
+            passport: null,
+            id_card: null,
+            drivers_license: null,
+            global_entry_ktn: null
+          }),
+          issuing_country: t.string,
+          card_number: t.string
         }),
-        issuing_country: t.string,
-        card_number: t.string
-      }),
-      t.partial({
-        expires_at: t.string,
-        issued_at: t.string
-      })
-    ])),
-    loyalty_cards: t.array(t.intersection([
-      t.type({
-        type: t.string
-      }),
-      t.partial({
-        card_number: t.string,
-        expires_at: t.string,
-        pin: t.string,
-        status: t.string
-      })
-    ])),
+        t.partial({
+          expires_at: t.string,
+          issued_at: t.string
+        })
+      ])
+    ),
+    loyalty_cards: t.array(
+      t.intersection([
+        t.type({
+          type: t.string
+        }),
+        t.partial({
+          card_number: t.string,
+          expires_at: t.string,
+          pin: t.string,
+          status: t.string
+        })
+      ])
+    ),
     client_cost_center_1: t.string,
     client_cost_center_2: t.string,
     client_cost_center_3: t.string,
@@ -122,135 +125,87 @@ export const traveler = t.intersection([
       updated_by: t.string
     }),
     policy_id: t.string,
-    roles: t.array(t.keyof({
-      admin: null,
-      central_booker: null,
-      traveler: null
-    }))
+    roles: t.array(
+      t.keyof({
+        admin: null,
+        central_booker: null,
+        traveler: null
+      })
+    )
   })
-])
+]);
 
 export interface traveler {
-  company?: string,
-  invoice_address_id: string,
-  first_name: string,
-  middle_name?: string,
-  last_name: string,
-  email: string,
-  language:
-    (
-    | 'de'
-    | 'en'
-    ),
-  title:
-    (
-    | 'Mr'
-    | 'Mrs'
-    ),
-  nationality?: string,
-  gender:
-    (
-    | 'm'
-    | 'f'
-    ),
-  birthday?: string,
+  company?: string;
+  invoice_address_id: string;
+  first_name: string;
+  middle_name?: string;
+  last_name: string;
+  email: string;
+  language: 'de' | 'en';
+  title: 'Mr' | 'Mrs';
+  nationality?: string;
+  gender: 'm' | 'f';
+  birthday?: string;
   contact?: {
-    phone?: string,
+    phone?: string;
     address?: {
-      street_1?: string,
-      street_2?: string,
-      label?: string,
-      zip_code?: string,
-      city: string,
-      state?: string,
-      country: string,
-      longitude?: number,
-      latitude?: number
-    },
-    managed?: boolean,
-    newsletter_subscribed?: boolean
-  },
+      street_1?: string;
+      street_2?: string;
+      label?: string;
+      zip_code?: string;
+      city: string;
+      state?: string;
+      country: string;
+      longitude?: number;
+      latitude?: number;
+    };
+    managed?: boolean;
+    newsletter_subscribed?: boolean;
+  };
   identifications?: Array<{
-    type:
-      (
-      | 'passport'
-      | 'id_card'
-      | 'drivers_license'
-      | 'global_entry_ktn'
-      ),
-    issuing_country: string,
-    card_number: string,
-    expires_at?: string,
-    issued_at?: string
-  }>,
+    type: 'passport' | 'id_card' | 'drivers_license' | 'global_entry_ktn';
+    issuing_country: string;
+    card_number: string;
+    expires_at?: string;
+    issued_at?: string;
+  }>;
   loyalty_cards?: Array<{
-    type: string,
-    card_number?: string,
-    expires_at?: string,
-    pin?: string,
-    status?: string
-  }>,
-  client_cost_center_1?: string,
-  client_cost_center_2?: string,
-  client_cost_center_3?: string,
+    type: string;
+    card_number?: string;
+    expires_at?: string;
+    pin?: string;
+    status?: string;
+  }>;
+  client_cost_center_1?: string;
+  client_cost_center_2?: string;
+  client_cost_center_3?: string;
   preference?: {
     airplane?: {
-      seat?:
-        (
-        | 'window'
-        | 'aisle'
-        ),
-      section?:
-        (
-        | 'front'
-        | 'back'
-        ),
-      description?: string
-    },
+      seat?: 'window' | 'aisle';
+      section?: 'front' | 'back';
+      description?: string;
+    };
     train?: {
-      reservation?: boolean,
-      class?: string,
-      section?:
-        (
-        | 'open_saloon'
-        | 'open_saloon_with_table'
-        | 'compartment'
-        ),
-      seat?:
-        (
-        | 'window'
-        | 'aisle'
-        ),
-      zone?:
-        (
-        | 'phone_zone'
-        | 'quiet_zone'
-        )
-    }
-  },
+      reservation?: boolean;
+      class?: string;
+      section?: 'open_saloon' | 'open_saloon_with_table' | 'compartment';
+      seat?: 'window' | 'aisle';
+      zone?: 'phone_zone' | 'quiet_zone';
+    };
+  };
   meta_data?: {
-    created_at?: string,
-    updated_at?: string,
-    created_by?: string,
-    updated_by?: string
-  },
-  policy_id?: string,
+    created_at?: string;
+    updated_at?: string;
+    created_by?: string;
+    updated_by?: string;
+  };
+  policy_id?: string;
   notification_settings: {
-    notification_receivers: Array<string>,
-    when_to_send:
-      (
-      | 'never'
-      | 'only_out_of_policy'
-      | 'always'
-      )
-  },
-  roles?: Array<
-    (
-    | 'admin'
-    | 'central_booker'
-    | 'traveler'
-    )>,
-  _id: string,
-  __v: number
+    notification_receivers: Array<string>;
+    when_to_send: 'never' | 'only_out_of_policy' | 'always';
+  };
+  roles?: Array<'admin' | 'central_booker' | 'traveler'>;
+  _id: string;
+  __v: number;
 }
-  

@@ -1,11 +1,11 @@
 import * as fs from 'fs';
 
-import * as t from "io-ts";
-import { pipe } from "fp-ts/function";
-import * as E from "fp-ts/Either";
+import * as t from 'io-ts';
+import { pipe } from 'fp-ts/function';
+import * as E from 'fp-ts/Either';
 // import * as A from "fp-ts/Array";
-import { PathReporter } from "io-ts/PathReporter";
-import { stringify } from 'json-to-pretty-yaml'
+import { PathReporter } from 'io-ts/PathReporter';
+import { stringify } from 'json-to-pretty-yaml';
 
 import * as mt from './types';
 import * as h from './helpers';
@@ -18,22 +18,20 @@ export interface PositiveBrand {
 const positive = t.brand(
   t.number, // a codec representing the type to be refined
   (n): n is t.Branded<number, PositiveBrand> => 0 < n, // a custom type guard using the build-in helper `Branded`
-  "Positive" // the name must match the readonly field in the brand
+  'Positive' // the name must match the readonly field in the brand
 );
 
-type Positive = t.TypeOf<typeof positive>;
+// type Positive = t.TypeOf<typeof positive>;
 
 const positiveInt = t.intersection([t.Int, positive]);
 
-type PositiveInt = t.TypeOf<typeof positiveInt>;
+// type PositiveInt = t.TypeOf<typeof positiveInt>;
 
 const unknownNumber = 20;
 
 if (!positiveInt.is(unknownNumber)) {
-    throw new Error('noo');
+  throw new Error('noo');
 }
-
-const pn: PositiveInt = unknownNumber;
 
 // [Types and combinators](https://github.com/gcanti/io-ts/blob/master/index.md#implemented-types--combinators)
 
@@ -44,7 +42,7 @@ const traveler = t.type(
     last_name: t.string,
     age: positiveInt //t.number // positive // t.Int
   },
-  "traveler"
+  'traveler'
 );
 
 h.log(1)(traveler);
@@ -52,22 +50,22 @@ h.log(1)(traveler);
 type Traveler = t.TypeOf<typeof traveler>;
 
 const travelerToBeValidated = {
-  id: "UUID",
-  name: "Baris",
-  last_name: "Aydek",
+  id: 'UUID',
+  name: 'Baris',
+  last_name: 'Aydek',
   age: 34 // TODO: break this
 };
 
 if (!traveler.is(travelerToBeValidated)) {
-  throw new Error("no");
+  throw new Error('no');
 }
 
 const travelerA: Traveler = travelerToBeValidated;
 
 const unknownTraveler: unknown = {
-  id: "UUID2",
-  name: "Baris2",
-  last_name: "Aydekk",
+  id: 'UUID2',
+  name: 'Baris2',
+  last_name: 'Aydekk',
   age: 35.4 // TODO: break this
 };
 
@@ -85,10 +83,10 @@ const travelerOpt = t.intersection(
       last_name: t.string
     }),
     t.partial({
-      age: mt.withDesc("Age of the traveler")(t.number)
+      age: mt.withDesc('Age of the traveler')(t.number)
     })
   ],
-  "travelerOpt"
+  'travelerOpt'
 );
 
 pipe(unknownTraveler, travelerOpt.decode, PathReporter.report, h.log(3));
@@ -111,7 +109,7 @@ h.log(8)(traveler);
 
 const travelerOptDefinition = {
   [travelerOpt.name]: {
-    type: "object",
+    type: 'object',
     properties: h.getProperties(travelerOpt as unknown as mt.AllTypes),
     required: h.getRequired(travelerOpt as unknown as mt.AllTypes)
   }
@@ -120,13 +118,13 @@ const travelerOptDefinition = {
 h.log(11)(travelerOptDefinition);
 
 const travelerDefinition = {
-    [traveler.name]: {
-      type: "object",
-      properties: h.getProperties(traveler as unknown as mt.AllTypes),
-      required: h.getRequired(traveler as unknown as mt.AllTypes)
-    }
-  };
-  
+  [traveler.name]: {
+    type: 'object',
+    properties: h.getProperties(traveler as unknown as mt.AllTypes),
+    required: h.getRequired(traveler as unknown as mt.AllTypes)
+  }
+};
+
 h.log(12)(travelerDefinition);
 
 // TODO: doesn't work right now (Error: KeyofType not found)
@@ -138,9 +136,13 @@ h.log(12)(travelerDefinition);
 //   }
 // }
 
-fs.writeFileSync("swaggerDefinitions.yaml", stringify({ 
-    ...travelerDefinition, ...travelerOptDefinition 
-}));
+fs.writeFileSync(
+  'swaggerDefinitions.yaml',
+  stringify({
+    ...travelerDefinition,
+    ...travelerOptDefinition
+  })
+);
 
 // https://github.com/gcanti/io-ts-codegen
 
@@ -174,6 +176,6 @@ const ct: td.traveler = {
   __v: 2,
   _id: 'Mongo ID',
   email: 'email@email.com'
-}
+};
 
-h.log(30)(ct)
+h.log(30)(ct);
