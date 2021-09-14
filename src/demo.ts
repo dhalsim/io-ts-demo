@@ -9,6 +9,7 @@ import { stringify } from 'json-to-pretty-yaml'
 
 import * as mt from './types';
 import * as h from './helpers';
+import * as td from '../typeDefinitions';
 
 export interface PositiveBrand {
   readonly Positive: unique symbol;
@@ -128,6 +129,15 @@ const travelerDefinition = {
   
 h.log(12)(travelerDefinition);
 
+// TODO: doesn't work right now (Error: KeyofType not found)
+// const generatedTraveler = {
+//   'generatedTraveler': {
+//     type: "object",
+//     properties: h.getProperties(td.traveler as unknown as mt.AllTypes),
+//     required: h.getRequired(td.traveler as unknown as mt.AllTypes)
+//   }
+// }
+
 fs.writeFileSync("swaggerDefinitions.yaml", stringify({ 
     ...travelerDefinition, ...travelerOptDefinition 
 }));
@@ -136,3 +146,34 @@ fs.writeFileSync("swaggerDefinitions.yaml", stringify({
 
 // Branded types / Refinements
 // TODO: go to top of the page and uncomment PositiveInt
+
+const ct: td.traveler = {
+  first_name: 'baris',
+  gender: 'm',
+  language: 'en',
+  last_name: 'aydek',
+  title: 'Mr',
+  contact: {
+    address: {
+      city: 'berlin',
+      country: 'DE'
+    }
+  },
+  identifications: [
+    {
+      type: 'drivers_license',
+      card_number: '23123123123',
+      issuing_country: 'DE'
+    }
+  ],
+  invoice_address_id: 'test',
+  notification_settings: {
+    notification_receivers: [],
+    when_to_send: 'never'
+  },
+  __v: 2,
+  _id: 'Mongo ID',
+  email: 'email@email.com'
+}
+
+h.log(30)(ct)

@@ -1,286 +1,367 @@
 {
     "traveler": {
-        "type": "object",
-        "required": [
-            "first_name",
-            "last_name",
-            "language",
-            "title",
-            "gender"
-        ],
-        "properties": {
-            "company": {
-                "type": "string",
-                "description": "ID of the company this traveler belongs to"
-            },
-            "invoice_address_id": {
-                "type": "string",
-                "description": "ID of specific invoice address within company invoice addresses list. Is not set for guest travelers"
-            },
-            "first_name": {
-                "type": "string"
-            },
-            "middle_name": {
-                "type": "string"
-            },
-            "last_name": {
-                "type": "string"
-            },
-            "email": {
-                "type": "string",
-                "description": "Default email for all communication with the traveler. Combination of company / email must be unique. Email is saved in lower case regardless of input."
-            },
-            "language": {
-                "type": "string",
-                "enum": [
-                    "de",
-                    "en"
-                ],
-                "description": "Preferred language for communication with this traveler, including documents (e.g. itinerary)"
-            },
-            "title": {
-                "type": "string",
-                "enum": [
-                    "Mr",
-                    "Mrs"
-                ]
-            },
-            "nationality": {
-                "type": "string",
-                "description": "2 letter ISO code"
-            },
-            "gender": {
-                "type": "string",
-                "enum": [
-                    "m",
-                    "f"
-                ]
-            },
-            "birthday": {
-                "type": "string",
-                "format": "date",
-                "description": "Format YYYY-MM-DD"
-            },
-            "contact": {
-                "type": "object",
-                "properties": {
-                    "phone": {
-                        "type": "string"
-                    },
-                    "address": {
+        "allOf": [
+            {
+                "allOf": [
+                    {
                         "type": "object",
                         "required": [
-                            "city",
-                            "country"
+                            "first_name",
+                            "last_name",
+                            "language",
+                            "title",
+                            "gender"
                         ],
                         "properties": {
-                            "street_1": {
+                            "company": {
+                                "type": "string",
+                                "description": "ID of the company this traveler belongs to"
+                            },
+                            "invoice_address_id": {
+                                "type": "string",
+                                "description": "ID of specific invoice address within company invoice addresses list. Is not set for guest travelers"
+                            },
+                            "first_name": {
                                 "type": "string"
                             },
-                            "street_2": {
+                            "middle_name": {
                                 "type": "string"
                             },
-                            "label": {
+                            "last_name": {
                                 "type": "string"
                             },
-                            "zip_code": {
-                                "type": "string"
+                            "email": {
+                                "type": "string",
+                                "description": "Default email for all communication with the traveler. Combination of company / email must be unique. Email is saved in lower case regardless of input."
                             },
-                            "city": {
-                                "type": "string"
+                            "language": {
+                                "type": "string",
+                                "enum": [
+                                    "de",
+                                    "en"
+                                ],
+                                "description": "Preferred language for communication with this traveler, including documents (e.g. itinerary)"
                             },
-                            "state": {
-                                "type": "string"
+                            "title": {
+                                "type": "string",
+                                "enum": [
+                                    "Mr",
+                                    "Mrs"
+                                ]
                             },
-                            "country": {
+                            "nationality": {
                                 "type": "string",
                                 "description": "2 letter ISO code"
                             },
-                            "longitude": {
-                                "type": "number",
-                                "description": "used along with latitude to define geographic coordinates."
-                            },
-                            "latitude": {
-                                "type": "number",
-                                "description": "used along with longitude to define geographic coordinates."
-                            }
-                        }
-                    },
-                    "managed": {
-                        "type": "boolean",
-                        "default": false,
-                        "description": "A managed traveler is a traveler who is not interested in any communication from Comtravo. This flag has affect on how the communcation happens with the traveler"
-                    },
-                    "newsletter_subscribed": {
-                        "type": "boolean",
-                        "default": true,
-                        "description": "indicates whether customer wants to receive newsletter"
-                    }
-                }
-            },
-            "identifications": {
-                "type": "array",
-                "items": {
-                    "type": "object",
-                    "required": [
-                        "type",
-                        "issuing_country",
-                        "card_number"
-                    ],
-                    "properties": {
-                        "type": {
-                            "type": "string",
-                            "enum": [
-                                "passport",
-                                "id_card",
-                                "drivers_license",
-                                "global_entry_ktn"
-                            ]
-                        },
-                        "issuing_country": {
-                            "type": "string"
-                        },
-                        "card_number": {
-                            "type": "string"
-                        },
-                        "expires_at": {
-                            "type": "string",
-                            "format": "date",
-                            "description": "Format YYYY-MM-DD"
-                        },
-                        "issued_at": {
-                            "type": "string",
-                            "format": "date",
-                            "description": "Format YYYY-MM-DD"
-                        }
-                    }
-                }
-            },
-            "loyalty_cards": {
-                "type": "array",
-                "items": {
-                    "type": "object",
-                    "required": [
-                        "type"
-                    ],
-                    "description": "Traveler loyalty cards are bound to a specific person",
-                    "properties": {
-                        "type": {
-                            "type": "string"
-                        },
-                        "card_number": {
-                            "type": "string"
-                        },
-                        "expires_at": {
-                            "type": "string",
-                            "description": "Format YYYY-MM-DD"
-                        },
-                        "pin": {
-                            "type": "string"
-                        },
-                        "status": {
-                            "type": "string",
-                            "description": "Status on this loyalty program, e.g. Senator, Gold etc."
-                        }
-                    }
-                }
-            },
-            "client_cost_center_1": {
-                "type": "string",
-                "description": "Cost center for client accounting that later appears on their bill / reporting. Validation depends on client. CCs are hierarchical, i.e. if 3 is set 1 and 2 must be provided too."
-            },
-            "client_cost_center_2": {
-                "type": "string"
-            },
-            "client_cost_center_3": {
-                "type": "string"
-            },
-            "preference": {
-                "type": "object",
-                "properties": {
-                    "airplane": {
-                        "type": "object",
-                        "properties": {
-                            "seat": {
+                            "gender": {
                                 "type": "string",
                                 "enum": [
-                                    "window",
-                                    "aisle"
+                                    "m",
+                                    "f"
                                 ]
                             },
-                            "section": {
+                            "birthday": {
                                 "type": "string",
-                                "enum": [
-                                    "front",
-                                    "back"
-                                ]
+                                "format": "date",
+                                "description": "Format YYYY-MM-DD"
                             },
-                            "description": {
+                            "contact": {
+                                "type": "object",
+                                "properties": {
+                                    "phone": {
+                                        "type": "string"
+                                    },
+                                    "address": {
+                                        "type": "object",
+                                        "required": [
+                                            "city",
+                                            "country"
+                                        ],
+                                        "properties": {
+                                            "street_1": {
+                                                "type": "string"
+                                            },
+                                            "street_2": {
+                                                "type": "string"
+                                            },
+                                            "label": {
+                                                "type": "string"
+                                            },
+                                            "zip_code": {
+                                                "type": "string"
+                                            },
+                                            "city": {
+                                                "type": "string"
+                                            },
+                                            "state": {
+                                                "type": "string"
+                                            },
+                                            "country": {
+                                                "type": "string",
+                                                "description": "2 letter ISO code"
+                                            },
+                                            "longitude": {
+                                                "type": "number",
+                                                "description": "used along with latitude to define geographic coordinates."
+                                            },
+                                            "latitude": {
+                                                "type": "number",
+                                                "description": "used along with longitude to define geographic coordinates."
+                                            }
+                                        }
+                                    },
+                                    "managed": {
+                                        "type": "boolean",
+                                        "default": false,
+                                        "description": "A managed traveler is a traveler who is not interested in any communication from Comtravo. This flag has affect on how the communcation happens with the traveler"
+                                    },
+                                    "newsletter_subscribed": {
+                                        "type": "boolean",
+                                        "default": true,
+                                        "description": "indicates whether customer wants to receive newsletter"
+                                    }
+                                }
+                            },
+                            "identifications": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "required": [
+                                        "type",
+                                        "issuing_country",
+                                        "card_number"
+                                    ],
+                                    "properties": {
+                                        "type": {
+                                            "type": "string",
+                                            "enum": [
+                                                "passport",
+                                                "id_card",
+                                                "drivers_license",
+                                                "global_entry_ktn"
+                                            ]
+                                        },
+                                        "issuing_country": {
+                                            "type": "string"
+                                        },
+                                        "card_number": {
+                                            "type": "string"
+                                        },
+                                        "expires_at": {
+                                            "type": "string",
+                                            "format": "date",
+                                            "description": "Format YYYY-MM-DD"
+                                        },
+                                        "issued_at": {
+                                            "type": "string",
+                                            "format": "date",
+                                            "description": "Format YYYY-MM-DD"
+                                        }
+                                    }
+                                }
+                            },
+                            "loyalty_cards": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "required": [
+                                        "type"
+                                    ],
+                                    "description": "Traveler loyalty cards are bound to a specific person",
+                                    "properties": {
+                                        "type": {
+                                            "type": "string"
+                                        },
+                                        "card_number": {
+                                            "type": "string"
+                                        },
+                                        "expires_at": {
+                                            "type": "string",
+                                            "description": "Format YYYY-MM-DD"
+                                        },
+                                        "pin": {
+                                            "type": "string"
+                                        },
+                                        "status": {
+                                            "type": "string",
+                                            "description": "Status on this loyalty program, e.g. Senator, Gold etc."
+                                        }
+                                    }
+                                }
+                            },
+                            "client_cost_center_1": {
+                                "type": "string",
+                                "description": "Cost center for client accounting that later appears on their bill / reporting. Validation depends on client. CCs are hierarchical, i.e. if 3 is set 1 and 2 must be provided too."
+                            },
+                            "client_cost_center_2": {
                                 "type": "string"
-                            }
-                        }
-                    },
-                    "train": {
-                        "type": "object",
-                        "properties": {
-                            "reservation": {
-                                "type": "boolean"
                             },
-                            "class": {
+                            "client_cost_center_3": {
                                 "type": "string"
                             },
-                            "section": {
-                                "type": "string",
-                                "enum": [
-                                    "open_saloon",
-                                    "open_saloon_with_table",
-                                    "compartment"
-                                ]
+                            "preference": {
+                                "type": "object",
+                                "properties": {
+                                    "airplane": {
+                                        "type": "object",
+                                        "properties": {
+                                            "seat": {
+                                                "type": "string",
+                                                "enum": [
+                                                    "window",
+                                                    "aisle"
+                                                ]
+                                            },
+                                            "section": {
+                                                "type": "string",
+                                                "enum": [
+                                                    "front",
+                                                    "back"
+                                                ]
+                                            },
+                                            "description": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "train": {
+                                        "type": "object",
+                                        "properties": {
+                                            "reservation": {
+                                                "type": "boolean"
+                                            },
+                                            "class": {
+                                                "type": "string"
+                                            },
+                                            "section": {
+                                                "type": "string",
+                                                "enum": [
+                                                    "open_saloon",
+                                                    "open_saloon_with_table",
+                                                    "compartment"
+                                                ]
+                                            },
+                                            "seat": {
+                                                "type": "string",
+                                                "enum": [
+                                                    "window",
+                                                    "aisle"
+                                                ]
+                                            },
+                                            "zone": {
+                                                "type": "string",
+                                                "enum": [
+                                                    "phone_zone",
+                                                    "quiet_zone"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
                             },
-                            "seat": {
-                                "type": "string",
-                                "enum": [
-                                    "window",
-                                    "aisle"
-                                ]
+                            "meta_data": {
+                                "type": "object",
+                                "description": "Some meta data we attach to all items we care about.",
+                                "properties": {
+                                    "created_at": {
+                                        "type": "string",
+                                        "format": "date-time"
+                                    },
+                                    "updated_at": {
+                                        "type": "string",
+                                        "format": "date-time"
+                                    },
+                                    "created_by": {
+                                        "type": "string",
+                                        "description": "Email of the user who created this item"
+                                    },
+                                    "updated_by": {
+                                        "type": "string",
+                                        "description": "Email of the user who updated this item"
+                                    }
+                                }
                             },
-                            "zone": {
+                            "policy_id": {
                                 "type": "string",
-                                "enum": [
-                                    "phone_zone",
-                                    "quiet_zone"
-                                ]
+                                "description": "unique identifier belonging one of the policies of its company"
+                            }
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "required": [
+                            "email",
+                            "invoice_address_id",
+                            "notification_settings"
+                        ],
+                        "properties": {
+                            "email": {
+                                "type": "string",
+                                "description": "Default email for all communication with the traveler. Email must be globally unique. Email is saved in lower case regardless of input. Email is immutable."
+                            },
+                            "invoice_address_id": {
+                                "type": "string",
+                                "description": "ID of specific invoice address within company. Note that it is mandatory within CRM context but not for other service(guest travelers, etc)."
+                            },
+                            "notification_settings": {
+                                "type": "object",
+                                "required": [
+                                    "notification_receivers",
+                                    "when_to_send"
+                                ],
+                                "properties": {
+                                    "notification_receivers": {
+                                        "type": "array",
+                                        "description": "traveler ids to be notified when booking out of policy or all bookings",
+                                        "maxItems": 5,
+                                        "uniqueItems": true,
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "when_to_send": {
+                                        "type": "string",
+                                        "enum": [
+                                            "never",
+                                            "only_out_of_policy",
+                                            "always"
+                                        ]
+                                    }
+                                }
+                            },
+                            "roles": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string",
+                                    "enum": [
+                                        "admin",
+                                        "central_booker",
+                                        "traveler"
+                                    ]
+                                },
+                                "uniqueItems": true,
+                                "description": "User can have multiple roles. Roles are not hierarchical and they grant rights for certain actions.\n1. admin role grants user to do modifications in CRM data(TBD), assign roles, etc.\n2. central_booker role grants user to do booking for others and for herself.\n3. traveler role grants user to do booking only for herself.\n4. with empty roles list she can still log in into MyComtravo, see her profile and bookings where she is part of(traveler or booker).\n"
                             }
                         }
                     }
-                }
+                ]
             },
-            "meta_data": {
+            {
                 "type": "object",
-                "description": "Some meta data we attach to all items we care about.",
+                "required": [
+                    "_id",
+                    "__v"
+                ],
                 "properties": {
-                    "created_at": {
+                    "_id": {
                         "type": "string",
-                        "format": "date-time"
+                        "description": "Technical PK"
                     },
-                    "updated_at": {
-                        "type": "string",
-                        "format": "date-time"
-                    },
-                    "created_by": {
-                        "type": "string",
-                        "description": "Email of the user who created this item"
-                    },
-                    "updated_by": {
-                        "type": "string",
-                        "description": "Email of the user who updated this item"
+                    "__v": {
+                        "type": "number"
                     }
                 }
-            },
-            "policy_id": {
-                "type": "string",
-                "description": "unique identifier belonging one of the policies of its company"
             }
-        }
+        ]
     }
 }

@@ -14,17 +14,26 @@ export type INTERSECTION_TYPE = 'IntersectionType';
 
 export type UNION_TYPE = 'UnionType';
 
+export type KEYOF_TYPE = 'KeyofType';
+
 export type COMBINATORY_TYPES = INTERSECTION_TYPE | UNION_TYPE;
 
-export type ALL_TYPES = PRIMITIVE_TYPES | COMPLEX_TYPES | REFINEMENT_TYPE | COMBINATORY_TYPES;
+export type ALL_TYPES = PRIMITIVE_TYPES | COMPLEX_TYPES | REFINEMENT_TYPE | COMBINATORY_TYPES | KEYOF_TYPE;
 
 // TYPES
-export type AllTypes = PrimitiveType | CombinatoryType | InterfaceType | PartialType | RefinementType;
+export type AllTypes = PrimitiveType | CombinatoryType | InterfaceType | PartialType | RefinementType | KeyOfType;
 
 export interface PrimitiveType {
     name: string;
     _tag: PRIMITIVE_TYPES;
     _desc?: string;
+}
+
+export interface KeyOfType {
+  name: string;
+  keys: { [key: string]: null };
+  _tag: 'KeyofType';
+  _desc?: string;
 }
 
 export interface CombinatoryType {

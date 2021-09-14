@@ -1,4 +1,4 @@
-
+import * as fs from 'fs';
 
 import * as swaggerJson from './demoSwagger.json';
 
@@ -25,17 +25,17 @@ export interface ObjectSchema {
 }
 
 export interface ArraySchema {
-    type: 'array'
-    items: JSONSchema[]
-    required?: Array<string>
-  }
+  type: 'array'
+  items: JSONSchema
+  required?: Array<string>
+}
 
 export type JSONSchema = StringSchema | NumberSchema | BooleanSchema | ObjectSchema | ArraySchema
 
 function getRequiredProperties(schema: ObjectSchema): { [key: string]: true } {
   const required: { [key: string]: true } = {}
   if (schema.required) {
-    schema.required.forEach(function(k) {
+    schema.required.forEach(function (k) {
       required[k] = true
     })
   }
@@ -51,9 +51,9 @@ function toInterfaceCombinator(schema: ObjectSchema): tc.InterfaceCombinator {
   )
 }
 
-// function toArrayCombinator(schema: ArraySchema): tc.ArrayCombinator {
-//     return tc.arrayCombinator()   
-// }
+function toArrayCombinator(schema: ArraySchema): tc.ArrayCombinator {
+  return tc.arrayCombinator(to(schema.items));
+}
 
 export function to(schema: JSONSchema): tc.TypeReference {
   switch (schema.type) {
@@ -65,17 +65,43 @@ export function to(schema: JSONSchema): tc.TypeReference {
       return tc.booleanType
     case 'object':
       return toInterfaceCombinator(schema)
-    // case 'array':
-    //   return toArrayCombinator(schema);
+    case 'array':
+      return toArrayCombinator(schema);
   }
 }
 
-async function handler() {
-    const typeDef = to(swaggerJson.traveler as unknown as JSONSchema);
+function mergeAllOf(schema: any): any {
+  if (schema.allOf) {
+    return schema.allOf.reduce((acc, elem) => {
+      const { required, properties } = mergeAllOf(elem);
 
-    log(22)(typeDef);
+      return {
+        ...acc,
+        required: acc.required.concat(required),
+        properties: { ...acc.properties, ...properties }
+      }
+    }, { required: [], properties: {}, type: "object" })
+  }
 
-    console.log(tc.printStatic(typeDef))
+  return schema;
 }
 
-handler()
+async function handler() {
+  const declarations = Object.entries(swaggerJson).map(([propKey, prop]) => 
+    tc.typeDeclaration(propKey, to(mergeAllOf(prop)), true)
+  )
+
+  log(10)(declarations);
+
+  const sorted = tc.sort(declarations)
+
+  fs.writeFileSync("typeDefinitions.ts", `
+import * as t from 'io-ts';
+
+${sorted.map(d => tc.printRuntime(d)).join('\n')}
+
+${sorted.map(d => tc.printStatic(d)).join('\n')}
+  `);
+}
+
+handler().catch(console.log)
