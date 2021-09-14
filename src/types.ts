@@ -1,9 +1,4 @@
-// HELPER FUNCTIONS
-export const withDesc = (desc: string) => (iots: any) => ({
-    ...iots,
-    _desc: desc
-  });
-  
+
 // TAGS
 export type PRIMITIVE_TYPES = 'StringType' | 'NumberType' | 'BigIntType' | 'BooleanType';
 
@@ -60,12 +55,16 @@ export interface RefinementType {
     _desc?: string;
 }
 
-// TYPE GUARDS
+export const withDesc = (desc: string) => (iots: any) => ({
+    ...iots,
+    _desc: desc
+  });
+
 export const isInterfaceType = (ty: AllTypes): ty is InterfaceType => 
-    ty._tag === 'InterfaceType';
+  ty._tag === 'InterfaceType';
 
 export const isPartialType = (ty: AllTypes): ty is PartialType => 
-    ty._tag === 'PartialType';
+  ty._tag === 'PartialType';
 
 export const isComplexType = (ty: AllTypes): ty is InterfaceType | PartialType =>
-    isInterfaceType(ty) || isPartialType(ty);
+  isInterfaceType(ty) || isPartialType(ty);
