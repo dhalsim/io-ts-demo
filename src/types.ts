@@ -78,10 +78,12 @@ export interface RefinementType {
   _desc?: string;
 }
 
-export const withDesc = (desc: string) => (iots: any) => ({
-  ...iots,
-  _desc: desc
-});
+export const withDesc =
+  (desc: string) =>
+  <T>(iots: T): T & { _desc: string } => ({
+    ...iots,
+    _desc: desc
+  });
 
 export const isInterfaceType = (ty: AllTypes): ty is InterfaceType =>
   ty._tag === 'InterfaceType';

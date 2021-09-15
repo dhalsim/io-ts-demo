@@ -110,7 +110,7 @@ async function handler() {
   const sorted = tc.sort(declarations);
 
   fs.writeFileSync(
-    'typeDefinitions.ts',
+    'src/generatedFiles/typeDefinitions.ts',
     `
 import * as t from 'io-ts';
 

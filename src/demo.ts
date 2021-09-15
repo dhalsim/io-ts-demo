@@ -3,13 +3,13 @@ import * as fs from 'fs';
 import * as t from 'io-ts';
 import { pipe } from 'fp-ts/function';
 import * as E from 'fp-ts/Either';
-// import * as A from "fp-ts/Array";
 import { PathReporter } from 'io-ts/PathReporter';
 import { stringify } from 'json-to-pretty-yaml';
 
 import * as mt from './types';
 import * as h from './helpers';
-import * as td from '../typeDefinitions';
+import * as td from '../src/generatedFiles/typeDefinitions';
+import { toSwagger } from './iotsToSwaggerConverter';
 
 export interface PositiveBrand {
   readonly Positive: unique symbol;
@@ -108,37 +108,25 @@ h.log(8)(traveler);
 // log(9)(travelerOpt);
 
 const travelerOptDefinition = {
-  [travelerOpt.name]: {
-    type: 'object',
-    properties: h.getProperties(travelerOpt as unknown as mt.AllTypes),
-    required: h.getRequired(travelerOpt as unknown as mt.AllTypes)
-  }
+  [travelerOpt.name]: toSwagger(travelerOpt)
 };
 
 h.log(11)(travelerOptDefinition);
 
 const travelerDefinition = {
-  [traveler.name]: {
-    type: 'object',
-    properties: h.getProperties(traveler as unknown as mt.AllTypes),
-    required: h.getRequired(traveler as unknown as mt.AllTypes)
-  }
+  [traveler.name]: toSwagger(traveler)
 };
 
 h.log(12)(travelerDefinition);
 
-// TODO: doesn't work right now (Error: KeyofType not found)
-// const generatedTraveler = {
-//   'generatedTraveler': {
-//     type: "object",
-//     properties: h.getProperties(td.traveler as unknown as mt.AllTypes),
-//     required: h.getRequired(td.traveler as unknown as mt.AllTypes)
-//   }
-// }
+const generatedTraveler = {
+  generatedTraveler: toSwagger(td.traveler)
+};
 
 fs.writeFileSync(
-  'swaggerDefinitions.yaml',
+  'src/generatedFiles/swaggerDefinitions.yaml',
   stringify({
+    ...generatedTraveler,
     ...travelerDefinition,
     ...travelerOptDefinition
   })

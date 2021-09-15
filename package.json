@@ -1,8 +1,9 @@
 {
     "scripts": {
-        "lint": "./node_modules/.bin/eslint --fix",
+        "lint": "./node_modules/.bin/eslint . --fix",
         "start": "node -r ts-node/register --inspect ./src/demo.ts",
         "codegen": "node -r ts-node/register --inspect ./src/codegen-demo.ts",
+        "codegen2": "node -r ts-node/register --inspect ./src/codegen-demo-v2.ts",
         "test": "./node_modules/.bin/jest"
     },
     "dependencies": {

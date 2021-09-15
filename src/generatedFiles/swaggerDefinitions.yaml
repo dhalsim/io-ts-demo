@@ -1,0 +1,31 @@
+traveler:
+  type: "object"
+  properties:
+    age:
+      type: "number"
+    last_name:
+      type: "string"
+    name:
+      type: "string"
+    id:
+      type: "string"
+  required:
+    - "id"
+    - "name"
+    - "last_name"
+    - "age"
+travelerOpt:
+  type: "object"
+  properties:
+    last_name:
+      type: "string"
+    name:
+      type: "string"
+    id:
+      type: "string"
+    age:
+      type: "number"
+  required:
+    - "id"
+    - "name"
+    - "last_name"

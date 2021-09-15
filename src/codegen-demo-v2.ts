@@ -1,3 +1,4 @@
+import fs from 'fs';
 import * as gen from 'io-ts-codegen';
 
 import * as swaggerJson from './fullSwagger.json';
@@ -58,7 +59,7 @@ function transformObjectSchema(schema: ObjectSchema): gen.InterfaceCombinator {
 }
 
 function transformAllOf(schema: AllOfSchema): gen.InterfaceCombinator {
-  const properties = []
+  const properties = [];
   for (const allOf of schema.allOf) {
     const typeReference = transform(allOf);
 
@@ -87,7 +88,7 @@ function transform(schema: JSONSchema): gen.TypeReference {
       return gen.arrayCombinator(transform(schema.items));
     default:
       if ((schema as any).enum) {
-        return gen.keyofCombinator((schema as any).enum)
+        return gen.keyofCombinator((schema as any).enum);
       }
 
       if (schema.allOf) {
@@ -97,12 +98,27 @@ function transform(schema: JSONSchema): gen.TypeReference {
 }
 
 function start(swaggerJSON: any) {
-
   const definitions = Object.keys(swaggerJSON.definitions).map((key) => {
-    return gen.typeDeclaration(key.toUpperCase(), transform(swaggerJSON.definitions[key]))
+    return gen.typeDeclaration(
+      key.toUpperCase(),
+      transform(swaggerJSON.definitions[key])
+    );
   });
 
   console.log(definitions.map((d) => gen.printStatic(d)).join('\n'));
+
+  const sorted = gen.sort(definitions);
+
+  fs.writeFileSync(
+    'src/generatedFiles/typeDefinitions_V2.ts',
+    `
+import * as t from 'io-ts';
+
+${sorted.map((d) => gen.printRuntime(d)).join('\n')}
+
+${sorted.map((d) => gen.printStatic(d)).join('\n')}
+`
+  );
 }
 
 start(swaggerJson);
