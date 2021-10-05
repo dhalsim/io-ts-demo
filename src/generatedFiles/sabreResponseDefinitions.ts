@@ -1,7 +1,7 @@
 
 import * as t from 'io-ts';
 
-export const groupedItineraryResponse = t.type({
+const groupedItineraryResponse = t.type({
   version: t.string,
   messages: t.array(t.type({
     severity: t.string,
@@ -84,8 +84,8 @@ export const groupedItineraryResponse = t.type({
     fareRule: t.string,
     cabinCode: t.string,
     segments: t.array(t.type({
-      segment: t.type({
-
+      segment: t.partial({
+        stopover: t.boolean
       })
     }))
   })),
@@ -217,7 +217,7 @@ export const groupedItineraryResponse = t.type({
   }))
 })
 
-const sabreSearchResponse = t.type({
+export const sabreSearchResponse = t.type({
   groupedItineraryResponse: groupedItineraryResponse
 })
 
@@ -305,7 +305,7 @@ interface GroupedItineraryResponse {
     cabinCode: string,
     segments: Array<{
       segment: {
-
+        stopover?: boolean
       }
     }>
   }>,
