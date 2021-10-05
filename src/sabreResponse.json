@@ -1,0 +1,3706 @@
+{
+  "groupedItineraryResponse": {
+      "version": "6.4.1",
+      "messages": [
+          {
+              "severity": "Info",
+              "type": "WORKERTHREAD",
+              "code": "TRANSACTIONID",
+              "text": "3145924714492171044"
+          },
+          {
+              "severity": "Info",
+              "type": "SERVER",
+              "code": "ASE032LPSCIL5AD.ATSE.CERT.ASCINT.SABRECIRRUS.COM",
+              "text": "27035"
+          },
+          {
+              "severity": "Info",
+              "type": "DRE",
+              "code": "RULEID",
+              "text": "21764"
+          },
+          {
+              "severity": "Info",
+              "type": "DEFAULT",
+              "code": "RULEID",
+              "text": "25238"
+          }
+      ],
+      "statistics": {
+          "itineraryCount": 172
+      },
+      "scheduleDescs": [
+          {
+              "id": 5,
+              "frequency": "****T**",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 270,
+              "elapsedTime": 70,
+              "departure": {
+                  "airport": "FRA",
+                  "city": "FRA",
+                  "country": "DE",
+                  "time": "10:45:00+02:00",
+                  "terminal": "1"
+              },
+              "arrival": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "11:55:00+02:00",
+                  "terminal": "1"
+              },
+              "carrier": {
+                  "marketing": "LH",
+                  "marketingFlightNumber": 184,
+                  "operating": "LH",
+                  "operatingFlightNumber": 184,
+                  "equipment": {
+                      "code": "319",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 6,
+              "frequency": "******S",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 365,
+              "elapsedTime": 80,
+              "departure": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "17:30:00+02:00"
+              },
+              "arrival": {
+                  "airport": "AMS",
+                  "city": "AMS",
+                  "country": "NL",
+                  "time": "18:50:00+02:00"
+              },
+              "carrier": {
+                  "marketing": "KL",
+                  "marketingFlightNumber": 1830,
+                  "operating": "KL",
+                  "operatingFlightNumber": 1830,
+                  "codeShared": "/KLM CITYHOPPER",
+                  "equipment": {
+                      "code": "295",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 7,
+              "frequency": "******S",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 365,
+              "elapsedTime": 80,
+              "departure": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "12:15:00+02:00"
+              },
+              "arrival": {
+                  "airport": "AMS",
+                  "city": "AMS",
+                  "country": "NL",
+                  "time": "13:35:00+02:00"
+              },
+              "carrier": {
+                  "marketing": "KL",
+                  "marketingFlightNumber": 1824,
+                  "operating": "KL",
+                  "operatingFlightNumber": 1824,
+                  "equipment": {
+                      "code": "73J",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 8,
+              "frequency": "***W***",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 335,
+              "elapsedTime": 75,
+              "departure": {
+                  "airport": "VIE",
+                  "city": "VIE",
+                  "country": "AT",
+                  "time": "13:05:00+02:00",
+                  "terminal": "3"
+              },
+              "arrival": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "14:20:00+02:00",
+                  "terminal": "1"
+              },
+              "carrier": {
+                  "marketing": "OS",
+                  "marketingFlightNumber": 229,
+                  "operating": "OS",
+                  "operatingFlightNumber": 229,
+                  "equipment": {
+                      "code": "320",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 9,
+              "frequency": "*M**T*S",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 5727,
+              "elapsedTime": 655,
+              "departure": {
+                  "airport": "AMS",
+                  "city": "AMS",
+                  "country": "NL",
+                  "time": "21:35:00+02:00"
+              },
+              "arrival": {
+                  "airport": "BKK",
+                  "city": "BKK",
+                  "country": "TH",
+                  "time": "13:30:00+07:00",
+                  "dateAdjustment": 1
+              },
+              "carrier": {
+                  "marketing": "KL",
+                  "marketingFlightNumber": 819,
+                  "operating": "KL",
+                  "operatingFlightNumber": 819,
+                  "equipment": {
+                      "code": "77W",
+                      "typeForFirstLeg": "W",
+                      "typeForLastLeg": "W"
+                  }
+              }
+          },
+          {
+              "id": 10,
+              "frequency": "****T**",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 365,
+              "elapsedTime": 75,
+              "departure": {
+                  "airport": "AMS",
+                  "city": "AMS",
+                  "country": "NL",
+                  "time": "10:15:00+02:00"
+              },
+              "arrival": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "11:30:00+02:00"
+              },
+              "carrier": {
+                  "marketing": "KL",
+                  "marketingFlightNumber": 1823,
+                  "operating": "KL",
+                  "operatingFlightNumber": 1823,
+                  "equipment": {
+                      "code": "73H",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 11,
+              "frequency": "****TF*",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 1060,
+              "elapsedTime": 175,
+              "departure": {
+                  "airport": "IST",
+                  "city": "IST",
+                  "country": "TR",
+                  "time": "07:45:00+03:00"
+              },
+              "arrival": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "09:40:00+02:00",
+                  "terminal": "1"
+              },
+              "carrier": {
+                  "marketing": "TK",
+                  "marketingFlightNumber": 1721,
+                  "operating": "TK",
+                  "operatingFlightNumber": 1721,
+                  "equipment": {
+                      "code": "333",
+                      "typeForFirstLeg": "W",
+                      "typeForLastLeg": "W"
+                  }
+              }
+          },
+          {
+              "id": 12,
+              "frequency": "****T**",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 411,
+              "elapsedTime": 85,
+              "departure": {
+                  "airport": "ZRH",
+                  "city": "ZRH",
+                  "country": "CH",
+                  "time": "07:20:00+02:00"
+              },
+              "arrival": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "08:45:00+02:00",
+                  "terminal": "1"
+              },
+              "carrier": {
+                  "marketing": "LX",
+                  "marketingFlightNumber": 974,
+                  "operating": "LX",
+                  "operatingFlightNumber": 974,
+                  "equipment": {
+                      "code": "320",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 13,
+              "frequency": "S*TW*F*",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 5256,
+              "elapsedTime": 675,
+              "departure": {
+                  "airport": "BKK",
+                  "city": "BKK",
+                  "country": "TH",
+                  "time": "02:20:00+07:00"
+              },
+              "arrival": {
+                  "airport": "VIE",
+                  "city": "VIE",
+                  "country": "AT",
+                  "time": "08:35:00+02:00",
+                  "terminal": "3"
+              },
+              "carrier": {
+                  "marketing": "BR",
+                  "marketingFlightNumber": 61,
+                  "operating": "BR",
+                  "operatingFlightNumber": 61,
+                  "alliances": "*A ",
+                  "equipment": {
+                      "code": "789",
+                      "typeForFirstLeg": "W",
+                      "typeForLastLeg": "W"
+                  }
+              }
+          },
+          {
+              "id": 14,
+              "frequency": "****T**",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 411,
+              "elapsedTime": 85,
+              "departure": {
+                  "airport": "ZRH",
+                  "city": "ZRH",
+                  "country": "CH",
+                  "time": "18:20:00+02:00"
+              },
+              "arrival": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "19:45:00+02:00",
+                  "terminal": "1"
+              },
+              "carrier": {
+                  "marketing": "LX",
+                  "marketingFlightNumber": 978,
+                  "operating": "LX",
+                  "operatingFlightNumber": 978,
+                  "equipment": {
+                      "code": "320",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 15,
+              "frequency": "******S",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 365,
+              "elapsedTime": 90,
+              "departure": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "18:50:00+02:00"
+              },
+              "arrival": {
+                  "airport": "AMS",
+                  "city": "AMS",
+                  "country": "NL",
+                  "time": "20:20:00+02:00"
+              },
+              "carrier": {
+                  "marketing": "KL",
+                  "marketingFlightNumber": 1832,
+                  "operating": "KL",
+                  "operatingFlightNumber": 1832,
+                  "codeShared": "/KLM CITYHOPPER",
+                  "equipment": {
+                      "code": "E90",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 16,
+              "frequency": "S*TW*FS",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 5632,
+              "elapsedTime": 640,
+              "departure": {
+                  "airport": "ZRH",
+                  "city": "ZRH",
+                  "country": "CH",
+                  "time": "22:40:00+02:00"
+              },
+              "arrival": {
+                  "airport": "BKK",
+                  "city": "BKK",
+                  "country": "TH",
+                  "time": "14:20:00+07:00",
+                  "dateAdjustment": 1
+              },
+              "carrier": {
+                  "marketing": "LX",
+                  "marketingFlightNumber": 180,
+                  "operating": "LX",
+                  "operatingFlightNumber": 180,
+                  "equipment": {
+                      "code": "343",
+                      "typeForFirstLeg": "W",
+                      "typeForLastLeg": "W"
+                  }
+              }
+          },
+          {
+              "id": 17,
+              "frequency": "**T*T*S",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 5727,
+              "elapsedTime": 660,
+              "departure": {
+                  "airport": "AMS",
+                  "city": "AMS",
+                  "country": "NL",
+                  "time": "21:40:00+02:00"
+              },
+              "arrival": {
+                  "airport": "BKK",
+                  "city": "BKK",
+                  "country": "TH",
+                  "time": "13:40:00+07:00",
+                  "dateAdjustment": 1
+              },
+              "carrier": {
+                  "marketing": "BR",
+                  "marketingFlightNumber": 76,
+                  "operating": "BR",
+                  "operatingFlightNumber": 76,
+                  "alliances": "*A ",
+                  "equipment": {
+                      "code": "77W",
+                      "typeForFirstLeg": "W",
+                      "typeForLastLeg": "W"
+                  }
+              }
+          },
+          {
+              "id": 18,
+              "frequency": "******S",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 411,
+              "elapsedTime": 90,
+              "departure": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "10:30:00+02:00",
+                  "terminal": "1"
+              },
+              "arrival": {
+                  "airport": "ZRH",
+                  "city": "ZRH",
+                  "country": "CH",
+                  "time": "12:00:00+02:00"
+              },
+              "carrier": {
+                  "marketing": "LX",
+                  "marketingFlightNumber": 977,
+                  "operating": "LX",
+                  "operatingFlightNumber": 977,
+                  "equipment": {
+                      "code": "320",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 19,
+              "trafficRestriction": "G",
+              "frequency": "******S",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 5256,
+              "elapsedTime": 600,
+              "departure": {
+                  "airport": "VIE",
+                  "city": "VIE",
+                  "country": "AT",
+                  "time": "16:45:00+02:00",
+                  "terminal": "3"
+              },
+              "arrival": {
+                  "airport": "BKK",
+                  "city": "BKK",
+                  "country": "TH",
+                  "time": "07:45:00+07:00",
+                  "dateAdjustment": 1
+              },
+              "carrier": {
+                  "marketing": "LH",
+                  "marketingFlightNumber": 6466,
+                  "operating": "OS",
+                  "operatingFlightNumber": 25,
+                  "disclosure": "OS",
+                  "equipment": {
+                      "code": "772",
+                      "typeForFirstLeg": "W",
+                      "typeForLastLeg": "W"
+                  }
+              }
+          },
+          {
+              "id": 20,
+              "frequency": "SMTWTF*",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 365,
+              "elapsedTime": 80,
+              "departure": {
+                  "airport": "AMS",
+                  "city": "AMS",
+                  "country": "NL",
+                  "time": "07:00:00+02:00"
+              },
+              "arrival": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "08:20:00+02:00"
+              },
+              "carrier": {
+                  "marketing": "KL",
+                  "marketingFlightNumber": 1821,
+                  "operating": "KL",
+                  "operatingFlightNumber": 1821,
+                  "codeShared": "/KLM CITYHOPPER",
+                  "equipment": {
+                      "code": "E90",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 21,
+              "frequency": "******S",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 595,
+              "elapsedTime": 125,
+              "departure": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "12:25:00+02:00",
+                  "terminal": "1"
+              },
+              "arrival": {
+                  "airport": "LHR",
+                  "city": "LON",
+                  "country": "GB",
+                  "time": "13:30:00+01:00",
+                  "terminal": "5"
+              },
+              "carrier": {
+                  "marketing": "BA",
+                  "marketingFlightNumber": 983,
+                  "operating": "BA",
+                  "operatingFlightNumber": 983,
+                  "alliances": "OW ",
+                  "equipment": {
+                      "code": "319",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 22,
+              "frequency": "SMTWTFS",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 1060,
+              "elapsedTime": 175,
+              "departure": {
+                  "airport": "IST",
+                  "city": "IST",
+                  "country": "TR",
+                  "time": "12:05:00+03:00"
+              },
+              "arrival": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "14:00:00+02:00",
+                  "terminal": "1"
+              },
+              "carrier": {
+                  "marketing": "TK",
+                  "marketingFlightNumber": 1725,
+                  "operating": "TK",
+                  "operatingFlightNumber": 1725,
+                  "equipment": {
+                      "code": "321",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 23,
+              "frequency": "S***T**",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 411,
+              "elapsedTime": 85,
+              "departure": {
+                  "airport": "ZRH",
+                  "city": "ZRH",
+                  "country": "CH",
+                  "time": "16:45:00+02:00"
+              },
+              "arrival": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "18:10:00+02:00",
+                  "terminal": "1"
+              },
+              "carrier": {
+                  "marketing": "LX",
+                  "marketingFlightNumber": 970,
+                  "operating": "LX",
+                  "operatingFlightNumber": 970,
+                  "equipment": {
+                      "code": "223",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 24,
+              "frequency": "SMTWTFS",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 4673,
+              "elapsedTime": 580,
+              "departure": {
+                  "airport": "IST",
+                  "city": "IST",
+                  "country": "TR",
+                  "time": "01:45:00+03:00"
+              },
+              "arrival": {
+                  "airport": "BKK",
+                  "city": "BKK",
+                  "country": "TH",
+                  "time": "15:25:00+07:00"
+              },
+              "carrier": {
+                  "marketing": "TK",
+                  "marketingFlightNumber": 68,
+                  "operating": "TK",
+                  "operatingFlightNumber": 68,
+                  "equipment": {
+                      "code": "333",
+                      "typeForFirstLeg": "W",
+                      "typeForLastLeg": "W"
+                  }
+              }
+          },
+          {
+              "id": 25,
+              "frequency": "******S",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 1060,
+              "elapsedTime": 175,
+              "departure": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "19:30:00+02:00",
+                  "terminal": "1"
+              },
+              "arrival": {
+                  "airport": "IST",
+                  "city": "IST",
+                  "country": "TR",
+                  "time": "23:25:00+03:00"
+              },
+              "carrier": {
+                  "marketing": "TK",
+                  "marketingFlightNumber": 1724,
+                  "operating": "TK",
+                  "operatingFlightNumber": 1724,
+                  "equipment": {
+                      "code": "333",
+                      "typeForFirstLeg": "W",
+                      "typeForLastLeg": "W"
+                  }
+              }
+          },
+          {
+              "id": 26,
+              "frequency": "******S",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 411,
+              "elapsedTime": 85,
+              "departure": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "20:35:00+02:00",
+                  "terminal": "1"
+              },
+              "arrival": {
+                  "airport": "ZRH",
+                  "city": "ZRH",
+                  "country": "CH",
+                  "time": "22:00:00+02:00"
+              },
+              "carrier": {
+                  "marketing": "LX",
+                  "marketingFlightNumber": 979,
+                  "operating": "LX",
+                  "operatingFlightNumber": 979,
+                  "equipment": {
+                      "code": "223",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 27,
+              "frequency": "SMTWTFS",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 4673,
+              "elapsedTime": 610,
+              "departure": {
+                  "airport": "BKK",
+                  "city": "BKK",
+                  "country": "TH",
+                  "time": "23:00:00+07:00"
+              },
+              "arrival": {
+                  "airport": "IST",
+                  "city": "IST",
+                  "country": "TR",
+                  "time": "05:10:00+03:00",
+                  "dateAdjustment": 1
+              },
+              "carrier": {
+                  "marketing": "TK",
+                  "marketingFlightNumber": 69,
+                  "operating": "TK",
+                  "operatingFlightNumber": 69,
+                  "equipment": {
+                      "code": "333",
+                      "typeForFirstLeg": "W",
+                      "typeForLastLeg": "W"
+                  }
+              }
+          },
+          {
+              "id": 28,
+              "frequency": "**TWT*S",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 365,
+              "elapsedTime": 90,
+              "departure": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "09:05:00+02:00"
+              },
+              "arrival": {
+                  "airport": "AMS",
+                  "city": "AMS",
+                  "country": "NL",
+                  "time": "10:35:00+02:00"
+              },
+              "carrier": {
+                  "marketing": "KL",
+                  "marketingFlightNumber": 1822,
+                  "operating": "KL",
+                  "operatingFlightNumber": 1822,
+                  "codeShared": "/KLM CITYHOPPER",
+                  "equipment": {
+                      "code": "E90",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 29,
+              "frequency": "SMTWTFS",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 5958,
+              "elapsedTime": 690,
+              "departure": {
+                  "airport": "LHR",
+                  "city": "LON",
+                  "country": "GB",
+                  "time": "21:35:00+01:00",
+                  "terminal": "2"
+              },
+              "arrival": {
+                  "airport": "BKK",
+                  "city": "BKK",
+                  "country": "TH",
+                  "time": "15:05:00+07:00",
+                  "dateAdjustment": 1
+              },
+              "carrier": {
+                  "marketing": "BR",
+                  "marketingFlightNumber": 68,
+                  "operating": "BR",
+                  "operatingFlightNumber": 68,
+                  "alliances": "*A ",
+                  "equipment": {
+                      "code": "77W",
+                      "typeForFirstLeg": "W",
+                      "typeForLastLeg": "W"
+                  }
+              }
+          },
+          {
+              "id": 30,
+              "frequency": "*MTWT*S",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 335,
+              "elapsedTime": 75,
+              "departure": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "07:00:00+02:00",
+                  "terminal": "1"
+              },
+              "arrival": {
+                  "airport": "VIE",
+                  "city": "VIE",
+                  "country": "AT",
+                  "time": "08:15:00+02:00",
+                  "terminal": "3"
+              },
+              "carrier": {
+                  "marketing": "LH",
+                  "marketingFlightNumber": 6358,
+                  "operating": "OS",
+                  "operatingFlightNumber": 240,
+                  "disclosure": "OS",
+                  "equipment": {
+                      "code": "320",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 31,
+              "frequency": "******S",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 335,
+              "elapsedTime": 75,
+              "departure": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "15:05:00+02:00",
+                  "terminal": "1"
+              },
+              "arrival": {
+                  "airport": "VIE",
+                  "city": "VIE",
+                  "country": "AT",
+                  "time": "16:20:00+02:00",
+                  "terminal": "3"
+              },
+              "carrier": {
+                  "marketing": "OS",
+                  "marketingFlightNumber": 230,
+                  "operating": "OS",
+                  "operatingFlightNumber": 230,
+                  "equipment": {
+                      "code": "E95",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 32,
+              "frequency": "****T**",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 270,
+              "elapsedTime": 70,
+              "departure": {
+                  "airport": "FRA",
+                  "city": "FRA",
+                  "country": "DE",
+                  "time": "09:00:00+02:00",
+                  "terminal": "1"
+              },
+              "arrival": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "10:10:00+02:00",
+                  "terminal": "1"
+              },
+              "carrier": {
+                  "marketing": "LH",
+                  "marketingFlightNumber": 174,
+                  "operating": "LH",
+                  "operatingFlightNumber": 174,
+                  "equipment": {
+                      "code": "32N",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 33,
+              "frequency": "****T**",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 365,
+              "elapsedTime": 85,
+              "departure": {
+                  "airport": "AMS",
+                  "city": "AMS",
+                  "country": "NL",
+                  "time": "15:15:00+02:00"
+              },
+              "arrival": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "16:40:00+02:00"
+              },
+              "carrier": {
+                  "marketing": "KL",
+                  "marketingFlightNumber": 1829,
+                  "operating": "KL",
+                  "operatingFlightNumber": 1829,
+                  "codeShared": "/KLM CITYHOPPER",
+                  "equipment": {
+                      "code": "295",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 34,
+              "frequency": "******S",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 411,
+              "elapsedTime": 85,
+              "departure": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "09:30:00+02:00",
+                  "terminal": "1"
+              },
+              "arrival": {
+                  "airport": "ZRH",
+                  "city": "ZRH",
+                  "country": "CH",
+                  "time": "10:55:00+02:00"
+              },
+              "carrier": {
+                  "marketing": "LX",
+                  "marketingFlightNumber": 975,
+                  "operating": "LX",
+                  "operatingFlightNumber": 975,
+                  "equipment": {
+                      "code": "32A",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 35,
+              "frequency": "***W***",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 335,
+              "elapsedTime": 75,
+              "departure": {
+                  "airport": "VIE",
+                  "city": "VIE",
+                  "country": "AT",
+                  "time": "19:05:00+02:00",
+                  "terminal": "3"
+              },
+              "arrival": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "20:20:00+02:00",
+                  "terminal": "1"
+              },
+              "carrier": {
+                  "marketing": "OS",
+                  "marketingFlightNumber": 237,
+                  "operating": "OS",
+                  "operatingFlightNumber": 237,
+                  "equipment": {
+                      "code": "320",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 51,
+              "frequency": "***WT**",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 270,
+              "elapsedTime": 70,
+              "departure": {
+                  "airport": "FRA",
+                  "city": "FRA",
+                  "country": "DE",
+                  "time": "13:30:00+02:00",
+                  "terminal": "1"
+              },
+              "arrival": {
+                  "airport": "BER",
+                  "city": "BER",
+                  "country": "DE",
+                  "time": "14:40:00+02:00",
+                  "terminal": "1"
+              },
+              "carrier": {
+                  "marketing": "LH",
+                  "marketingFlightNumber": 190,
+                  "operating": "LH",
+                  "operatingFlightNumber": 190,
+                  "equipment": {
+                      "code": "321",
+                      "typeForFirstLeg": "N",
+                      "typeForLastLeg": "N"
+                  }
+              }
+          },
+          {
+              "id": 52,
+              "frequency": "SMTWTF*",
+              "stopCount": 0,
+              "eTicketable": true,
+              "totalMilesFlown": 5727,
+              "elapsedTime": 710,
+              "departure": {
+                  "airport": "BKK",
+                  "city": "BKK",
+                  "country": "TH",
+                  "time": "23:30:00+07:00"
+              },
+              "arrival": {
+                  "airport": "AMS",
+                  "city": "AMS",
+                  "country": "NL",
+                  "time": "06:20:00+02:00",
+                  "dateAdjustment": 1
+              },
+              "carrier": {
+                  "marketing": "KL",
+                  "marketingFlightNumber": 804,
+                  "operating": "KL",
+                  "operatingFlightNumber": 804,
+                  "equipment": {
+                      "code": "789",
+                      "typeForFirstLeg": "W",
+                      "typeForLastLeg": "W"
+                  }
+              }
+          }
+      ],
+      "taxDescs": [
+          {
+              "id": 1,
+              "code": "DE",
+              "amount": 9.95,
+              "currency": "EUR",
+              "description": "AIRPORT SECURITY CHARGE",
+              "publishedAmount": 9.95,
+              "publishedCurrency": "EUR",
+              "station": "FRA",
+              "country": "DE"
+          },
+          {
+              "id": 2,
+              "code": "YRF",
+              "amount": 121.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED FUEL",
+              "publishedAmount": 121.00,
+              "publishedCurrency": "EUR",
+              "station": "BKK"
+          },
+          {
+              "id": 3,
+              "code": "TR",
+              "amount": 5.00,
+              "currency": "EUR",
+              "description": "AIRPORT SERVICE CHARGE INTERNATIONAL",
+              "publishedAmount": 5.00,
+              "publishedCurrency": "EUR",
+              "station": "IST",
+              "country": "TR"
+          },
+          {
+              "id": 4,
+              "code": "E72",
+              "amount": 0.90,
+              "currency": "EUR",
+              "description": "ADVANCE PASSENGER PROCESSING USER CHARGE",
+              "publishedAmount": 35,
+              "publishedCurrency": "THB",
+              "station": "IST",
+              "country": "TH"
+          },
+          {
+              "id": 5,
+              "code": "OY4",
+              "amount": 58.73,
+              "currency": "EUR",
+              "description": "AIR TRANSPORT TAX",
+              "publishedAmount": 58.73,
+              "publishedCurrency": "EUR",
+              "station": "BER",
+              "country": "DE"
+          },
+          {
+              "id": 6,
+              "code": "YQF",
+              "amount": 132.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED FUEL",
+              "publishedAmount": 132.00,
+              "publishedCurrency": "EUR",
+              "station": "AMS"
+          },
+          {
+              "id": 7,
+              "code": "RA",
+              "amount": 0.50,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE INTERNATIONAL ARRIVAL",
+              "publishedAmount": 0.50,
+              "publishedCurrency": "EUR",
+              "station": "ZRH",
+              "country": "DE"
+          },
+          {
+              "id": 8,
+              "code": "YQF",
+              "amount": 66.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED FUEL",
+              "publishedAmount": 66.00,
+              "publishedCurrency": "EUR",
+              "station": "LHR"
+          },
+          {
+              "id": 9,
+              "code": "TS",
+              "amount": 17.92,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE",
+              "publishedAmount": 700,
+              "publishedCurrency": "THB",
+              "station": "BKK",
+              "country": "TH"
+          },
+          {
+              "id": 10,
+              "code": "E72",
+              "amount": 0.90,
+              "currency": "EUR",
+              "description": "ADVANCE PASSENGER PROCESSING USER CHARGE",
+              "publishedAmount": 35,
+              "publishedCurrency": "THB",
+              "station": "LHR",
+              "country": "TH"
+          },
+          {
+              "id": 11,
+              "code": "YRI",
+              "amount": 17.07,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED MISC",
+              "publishedAmount": 20.00,
+              "publishedCurrency": "USD",
+              "station": "AMS"
+          },
+          {
+              "id": 12,
+              "code": "CJ",
+              "amount": 7.12,
+              "currency": "EUR",
+              "description": "SECURITY SERVICE CHARGE",
+              "publishedAmount": 7.12,
+              "publishedCurrency": "EUR",
+              "station": "AMS",
+              "country": "NL"
+          },
+          {
+              "id": 13,
+              "code": "E72",
+              "amount": 0.90,
+              "currency": "EUR",
+              "description": "ADVANCE PASSENGER PROCESSING USER CHARGE",
+              "publishedAmount": 35,
+              "publishedCurrency": "THB",
+              "station": "ZRH",
+              "country": "TH"
+          },
+          {
+              "id": 14,
+              "code": "YRI",
+              "amount": 19.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED MISC",
+              "publishedAmount": 19.00,
+              "publishedCurrency": "EUR",
+              "station": "BER"
+          },
+          {
+              "id": 15,
+              "code": "G82",
+              "amount": 0.39,
+              "currency": "EUR",
+              "description": "INTERNATIONAL ARRIVAL FEE",
+              "publishedAmount": 15,
+              "publishedCurrency": "THB",
+              "station": "IST",
+              "country": "TH"
+          },
+          {
+              "id": 16,
+              "code": "YQI",
+              "amount": 45.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED MISC",
+              "publishedAmount": 45.00,
+              "publishedCurrency": "EUR",
+              "station": "BER"
+          },
+          {
+              "id": 17,
+              "code": "YRF",
+              "amount": 121.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED FUEL",
+              "publishedAmount": 121.00,
+              "publishedCurrency": "EUR",
+              "station": "IST"
+          },
+          {
+              "id": 18,
+              "code": "YQI",
+              "amount": 135.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED MISC",
+              "publishedAmount": 135.00,
+              "publishedCurrency": "EUR",
+              "station": "ZRH"
+          },
+          {
+              "id": 19,
+              "code": "G82",
+              "amount": 0.39,
+              "currency": "EUR",
+              "description": "INTERNATIONAL ARRIVAL FEE",
+              "publishedAmount": 15,
+              "publishedCurrency": "THB",
+              "station": "ZRH",
+              "country": "TH"
+          },
+          {
+              "id": 20,
+              "code": "YRI",
+              "amount": 100.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED MISC",
+              "publishedAmount": 100.00,
+              "publishedCurrency": "EUR",
+              "station": "BKK"
+          },
+          {
+              "id": 21,
+              "code": "DE",
+              "amount": 8.62,
+              "currency": "EUR",
+              "description": "AIRPORT SECURITY CHARGE",
+              "publishedAmount": 8.62,
+              "publishedCurrency": "EUR",
+              "station": "BER",
+              "country": "DE"
+          },
+          {
+              "id": 22,
+              "code": "RA2",
+              "amount": 8.12,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE INTERNATIONAL DEPARTURE",
+              "publishedAmount": 8.12,
+              "publishedCurrency": "EUR",
+              "station": "BER",
+              "country": "DE"
+          },
+          {
+              "id": 23,
+              "code": "RA",
+              "amount": 0.50,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE INTERNATIONAL ARRIVAL",
+              "publishedAmount": 0.50,
+              "publishedCurrency": "EUR",
+              "station": "AMS",
+              "country": "DE"
+          },
+          {
+              "id": 24,
+              "code": "YQI",
+              "amount": 135.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED MISC",
+              "publishedAmount": 135.00,
+              "publishedCurrency": "EUR",
+              "station": "BKK"
+          },
+          {
+              "id": 25,
+              "code": "YRI",
+              "amount": 100.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED MISC",
+              "publishedAmount": 100.00,
+              "publishedCurrency": "EUR",
+              "station": "AMS"
+          },
+          {
+              "id": 26,
+              "code": "G82",
+              "amount": 0.39,
+              "currency": "EUR",
+              "description": "INTERNATIONAL ARRIVAL FEE",
+              "publishedAmount": 15,
+              "publishedCurrency": "THB",
+              "station": "LHR",
+              "country": "TH"
+          },
+          {
+              "id": 27,
+              "code": "UB",
+              "amount": 37.94,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE DEPARTURES",
+              "publishedAmount": 32.49,
+              "publishedCurrency": "GBP",
+              "station": "LHR",
+              "country": "GB"
+          },
+          {
+              "id": 28,
+              "code": "E7",
+              "amount": 0.90,
+              "currency": "EUR",
+              "description": "ADVANCE PASSENGER PROCESSING USER CHARGE",
+              "publishedAmount": 35,
+              "publishedCurrency": "THB",
+              "station": "BKK",
+              "country": "TH"
+          },
+          {
+              "id": 29,
+              "code": "YRI",
+              "amount": 17.07,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED MISC",
+              "publishedAmount": 20.00,
+              "publishedCurrency": "USD",
+              "station": "LHR"
+          },
+          {
+              "id": 30,
+              "code": "G82",
+              "amount": 0.39,
+              "currency": "EUR",
+              "description": "INTERNATIONAL ARRIVAL FEE",
+              "publishedAmount": 15,
+              "publishedCurrency": "THB",
+              "station": "VIE",
+              "country": "TH"
+          },
+          {
+              "id": 31,
+              "code": "YQI",
+              "amount": 24.50,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED MISC",
+              "publishedAmount": 24.50,
+              "publishedCurrency": "EUR",
+              "station": "BER"
+          },
+          {
+              "id": 32,
+              "code": "YQF",
+              "amount": 110.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED FUEL",
+              "publishedAmount": 110.00,
+              "publishedCurrency": "EUR",
+              "station": "BKK"
+          },
+          {
+              "id": 33,
+              "code": "YRI",
+              "amount": 41.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED MISC",
+              "publishedAmount": 41.00,
+              "publishedCurrency": "EUR",
+              "station": "BER"
+          },
+          {
+              "id": 34,
+              "code": "RA",
+              "amount": 0.50,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE INTERNATIONAL ARRIVAL",
+              "publishedAmount": 0.50,
+              "publishedCurrency": "EUR",
+              "station": "VIE",
+              "country": "DE"
+          },
+          {
+              "id": 35,
+              "code": "G8",
+              "amount": 0.39,
+              "currency": "EUR",
+              "description": "INTERNATIONAL DEPARTURE FEE",
+              "publishedAmount": 15,
+              "publishedCurrency": "THB",
+              "station": "BKK",
+              "country": "TH"
+          },
+          {
+              "id": 36,
+              "code": "YQI",
+              "amount": 45.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED MISC",
+              "publishedAmount": 45.00,
+              "publishedCurrency": "EUR",
+              "station": "ZRH"
+          },
+          {
+              "id": 37,
+              "code": "YRF",
+              "amount": 43.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED FUEL",
+              "publishedAmount": 43.00,
+              "publishedCurrency": "EUR",
+              "station": "IST"
+          },
+          {
+              "id": 38,
+              "code": "RD2",
+              "amount": 21.83,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE DOMESTIC DEPARTURE",
+              "publishedAmount": 21.83,
+              "publishedCurrency": "EUR",
+              "station": "FRA",
+              "country": "DE"
+          },
+          {
+              "id": 39,
+              "code": "YQI",
+              "amount": 13.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED MISC",
+              "publishedAmount": 13.00,
+              "publishedCurrency": "EUR",
+              "station": "BKK"
+          },
+          {
+              "id": 40,
+              "code": "G82",
+              "amount": 0.39,
+              "currency": "EUR",
+              "description": "INTERNATIONAL ARRIVAL FEE",
+              "publishedAmount": 15,
+              "publishedCurrency": "THB",
+              "station": "AMS",
+              "country": "TH"
+          },
+          {
+              "id": 41,
+              "code": "M6",
+              "amount": 3.00,
+              "currency": "EUR",
+              "description": "INTERNATIONAL FLIGHTS SECURITY CHARGE",
+              "publishedAmount": 3.00,
+              "publishedCurrency": "EUR",
+              "station": "IST",
+              "country": "TR"
+          },
+          {
+              "id": 42,
+              "code": "YQI",
+              "amount": 45.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED MISC",
+              "publishedAmount": 45.00,
+              "publishedCurrency": "EUR",
+              "station": "VIE"
+          },
+          {
+              "id": 43,
+              "code": "TR",
+              "amount": 20.00,
+              "currency": "EUR",
+              "description": "AIRPORT SERVICE CHARGE INTERNATIONAL",
+              "publishedAmount": 20.00,
+              "publishedCurrency": "EUR",
+              "station": "IST",
+              "country": "TR"
+          },
+          {
+              "id": 44,
+              "code": "YRI",
+              "amount": 17.07,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED MISC",
+              "publishedAmount": 20.00,
+              "publishedCurrency": "USD",
+              "station": "BKK"
+          },
+          {
+              "id": 45,
+              "code": "RA",
+              "amount": 0.50,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE INTERNATIONAL ARRIVAL",
+              "publishedAmount": 0.50,
+              "publishedCurrency": "EUR",
+              "station": "IST",
+              "country": "DE"
+          },
+          {
+              "id": 46,
+              "code": "RN",
+              "amount": 7.43,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE",
+              "publishedAmount": 7.43,
+              "publishedCurrency": "EUR",
+              "station": "AMS",
+              "country": "NL"
+          },
+          {
+              "id": 47,
+              "code": "YQI",
+              "amount": 135.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED MISC",
+              "publishedAmount": 135.00,
+              "publishedCurrency": "EUR",
+              "station": "VIE"
+          },
+          {
+              "id": 48,
+              "code": "CH",
+              "amount": 13.30,
+              "currency": "EUR",
+              "description": "AIRPORT PASSENGER SECURITY AND NOISE CHARGE",
+              "publishedAmount": 14.40,
+              "publishedCurrency": "CHF",
+              "station": "ZRH",
+              "country": "CH"
+          },
+          {
+              "id": 49,
+              "code": "R1",
+              "amount": 10.40,
+              "currency": "EUR",
+              "description": "EXCEPTIONAL REGULATORY CHARGE",
+              "publishedAmount": 8.90,
+              "publishedCurrency": "GBP",
+              "station": "LHR",
+              "country": "GB"
+          },
+          {
+              "id": 50,
+              "code": "YQI",
+              "amount": 45.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED MISC",
+              "publishedAmount": 45.00,
+              "publishedCurrency": "EUR",
+              "station": "FRA"
+          },
+          {
+              "id": 51,
+              "code": "E72",
+              "amount": 0.90,
+              "currency": "EUR",
+              "description": "ADVANCE PASSENGER PROCESSING USER CHARGE",
+              "publishedAmount": 35,
+              "publishedCurrency": "THB",
+              "station": "AMS",
+              "country": "TH"
+          },
+          {
+              "id": 52,
+              "code": "E72",
+              "amount": 0.90,
+              "currency": "EUR",
+              "description": "ADVANCE PASSENGER PROCESSING USER CHARGE",
+              "publishedAmount": 35,
+              "publishedCurrency": "THB",
+              "station": "VIE",
+              "country": "TH"
+          },
+          {
+              "id": 53,
+              "code": "RD",
+              "amount": 0.50,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE DOMESTIC ARRIVAL",
+              "publishedAmount": 0.50,
+              "publishedCurrency": "EUR",
+              "station": "FRA",
+              "country": "DE"
+          },
+          {
+              "id": 54,
+              "code": "RA2",
+              "amount": 9.45,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE INTERNATIONAL DEPARTURE",
+              "publishedAmount": 9.45,
+              "publishedCurrency": "EUR",
+              "station": "BER",
+              "country": "DE"
+          },
+          {
+              "id": 55,
+              "code": "YQI",
+              "amount": 13.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED MISC",
+              "publishedAmount": 13.00,
+              "publishedCurrency": "EUR",
+              "station": "BER"
+          },
+          {
+              "id": 56,
+              "code": "AT",
+              "amount": 8.44,
+              "currency": "EUR",
+              "description": "PASSENGER SECURITY CHARGE",
+              "publishedAmount": 8.44,
+              "publishedCurrency": "EUR",
+              "station": "VIE",
+              "country": "AT"
+          },
+          {
+              "id": 57,
+              "code": "YRF",
+              "amount": 43.00,
+              "currency": "EUR",
+              "description": "SERVICE FEE - CARRIER-IMPOSED FUEL",
+              "publishedAmount": 43.00,
+              "publishedCurrency": "EUR",
+              "station": "BER"
+          },
+          {
+              "id": 58,
+              "code": "ZY",
+              "amount": 18.77,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE",
+              "publishedAmount": 18.77,
+              "publishedCurrency": "EUR",
+              "station": "VIE",
+              "country": "AT"
+          }
+      ],
+      "taxSummaryDescs": [
+          {
+              "id": 1,
+              "code": "YQ",
+              "amount": 270.50,
+              "currency": "EUR",
+              "description": "YQ taxes summary"
+          },
+          {
+              "id": 2,
+              "code": "ZY",
+              "amount": 37.54,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE",
+              "publishedAmount": 18.77,
+              "publishedCurrency": "EUR",
+              "station": "VIE",
+              "country": "AT"
+          },
+          {
+              "id": 3,
+              "code": "TR",
+              "amount": 10.00,
+              "currency": "EUR",
+              "description": "AIRPORT SERVICE CHARGE INTERNATIONAL",
+              "publishedAmount": 5.00,
+              "publishedCurrency": "EUR",
+              "station": "IST",
+              "country": "TR"
+          },
+          {
+              "id": 4,
+              "code": "RA",
+              "amount": 8.62,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE INTERNATIONAL ARRIVAL",
+              "publishedAmount": 0.50,
+              "publishedCurrency": "EUR",
+              "station": "AMS",
+              "country": "DE"
+          },
+          {
+              "id": 5,
+              "code": "YQ",
+              "amount": 26.00,
+              "currency": "EUR",
+              "description": "YQ taxes summary"
+          },
+          {
+              "id": 6,
+              "code": "TS",
+              "amount": 17.92,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE",
+              "publishedAmount": 700,
+              "publishedCurrency": "THB",
+              "station": "BKK",
+              "country": "TH"
+          },
+          {
+              "id": 7,
+              "code": "CJ",
+              "amount": 7.12,
+              "currency": "EUR",
+              "description": "SECURITY SERVICE CHARGE",
+              "publishedAmount": 7.12,
+              "publishedCurrency": "EUR",
+              "station": "AMS",
+              "country": "NL"
+          },
+          {
+              "id": 8,
+              "code": "YR",
+              "amount": 58.07,
+              "currency": "EUR",
+              "description": "YR taxes summary"
+          },
+          {
+              "id": 9,
+              "code": "YR",
+              "amount": 200.00,
+              "currency": "EUR",
+              "description": "YR taxes summary"
+          },
+          {
+              "id": 10,
+              "code": "YR",
+              "amount": 19.00,
+              "currency": "EUR",
+              "description": "YR taxes summary"
+          },
+          {
+              "id": 11,
+              "code": "DE",
+              "amount": 8.62,
+              "currency": "EUR",
+              "description": "AIRPORT SECURITY CHARGE",
+              "publishedAmount": 8.62,
+              "publishedCurrency": "EUR",
+              "station": "BER",
+              "country": "DE"
+          },
+          {
+              "id": 12,
+              "code": "AT",
+              "amount": 16.88,
+              "currency": "EUR",
+              "description": "PASSENGER SECURITY CHARGE",
+              "publishedAmount": 8.44,
+              "publishedCurrency": "EUR",
+              "station": "VIE",
+              "country": "AT"
+          },
+          {
+              "id": 13,
+              "code": "TR",
+              "amount": 25.00,
+              "currency": "EUR",
+              "description": "AIRPORT SERVICE CHARGE INTERNATIONAL",
+              "publishedAmount": 20.00,
+              "publishedCurrency": "EUR",
+              "station": "IST",
+              "country": "TR"
+          },
+          {
+              "id": 14,
+              "code": "G8",
+              "amount": 0.78,
+              "currency": "EUR",
+              "description": "INTERNATIONAL DEPARTURE FEE",
+              "publishedAmount": 15,
+              "publishedCurrency": "THB",
+              "station": "BKK",
+              "country": "TH"
+          },
+          {
+              "id": 15,
+              "code": "UB",
+              "amount": 37.94,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE DEPARTURES",
+              "publishedAmount": 32.49,
+              "publishedCurrency": "GBP",
+              "station": "LHR",
+              "country": "GB"
+          },
+          {
+              "id": 16,
+              "code": "RA",
+              "amount": 8.62,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE INTERNATIONAL ARRIVAL",
+              "publishedAmount": 0.50,
+              "publishedCurrency": "EUR",
+              "station": "VIE",
+              "country": "DE"
+          },
+          {
+              "id": 17,
+              "code": "RD",
+              "amount": 22.33,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE DOMESTIC ARRIVAL",
+              "publishedAmount": 0.50,
+              "publishedCurrency": "EUR",
+              "station": "FRA",
+              "country": "DE"
+          },
+          {
+              "id": 18,
+              "code": "RA",
+              "amount": 9.45,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE INTERNATIONAL DEPARTURE",
+              "publishedAmount": 9.45,
+              "publishedCurrency": "EUR",
+              "station": "BER",
+              "country": "DE"
+          },
+          {
+              "id": 19,
+              "code": "YQ",
+              "amount": 245.50,
+              "currency": "EUR",
+              "description": "YQ taxes summary"
+          },
+          {
+              "id": 20,
+              "code": "OY",
+              "amount": 58.73,
+              "currency": "EUR",
+              "description": "AIR TRANSPORT TAX",
+              "publishedAmount": 58.73,
+              "publishedCurrency": "EUR",
+              "station": "BER",
+              "country": "DE"
+          },
+          {
+              "id": 21,
+              "code": "E7",
+              "amount": 1.80,
+              "currency": "EUR",
+              "description": "ADVANCE PASSENGER PROCESSING USER CHARGE",
+              "publishedAmount": 35,
+              "publishedCurrency": "THB",
+              "station": "BKK",
+              "country": "TH"
+          },
+          {
+              "id": 22,
+              "code": "RA",
+              "amount": 9.95,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE INTERNATIONAL ARRIVAL",
+              "publishedAmount": 0.50,
+              "publishedCurrency": "EUR",
+              "station": "IST",
+              "country": "DE"
+          },
+          {
+              "id": 23,
+              "code": "RA",
+              "amount": 9.95,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE INTERNATIONAL ARRIVAL",
+              "publishedAmount": 0.50,
+              "publishedCurrency": "EUR",
+              "station": "VIE",
+              "country": "DE"
+          },
+          {
+              "id": 24,
+              "code": "RN",
+              "amount": 14.86,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE",
+              "publishedAmount": 7.43,
+              "publishedCurrency": "EUR",
+              "station": "AMS",
+              "country": "NL"
+          },
+          {
+              "id": 25,
+              "code": "CH",
+              "amount": 26.60,
+              "currency": "EUR",
+              "description": "AIRPORT PASSENGER SECURITY AND NOISE CHARGE",
+              "publishedAmount": 14.40,
+              "publishedCurrency": "CHF",
+              "station": "ZRH",
+              "country": "CH"
+          },
+          {
+              "id": 26,
+              "code": "M6",
+              "amount": 3.00,
+              "currency": "EUR",
+              "description": "INTERNATIONAL FLIGHTS SECURITY CHARGE",
+              "publishedAmount": 3.00,
+              "publishedCurrency": "EUR",
+              "station": "IST",
+              "country": "TR"
+          },
+          {
+              "id": 27,
+              "code": "YR",
+              "amount": 17.07,
+              "currency": "EUR",
+              "description": "YR taxes summary"
+          },
+          {
+              "id": 28,
+              "code": "YQ",
+              "amount": 325.00,
+              "currency": "EUR",
+              "description": "YQ taxes summary"
+          },
+          {
+              "id": 29,
+              "code": "CJ",
+              "amount": 14.24,
+              "currency": "EUR",
+              "description": "SECURITY SERVICE CHARGE",
+              "publishedAmount": 7.12,
+              "publishedCurrency": "EUR",
+              "station": "AMS",
+              "country": "NL"
+          },
+          {
+              "id": 30,
+              "code": "YQ",
+              "amount": 360.00,
+              "currency": "EUR",
+              "description": "YQ taxes summary"
+          },
+          {
+              "id": 31,
+              "code": "RN",
+              "amount": 7.43,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE",
+              "publishedAmount": 7.43,
+              "publishedCurrency": "EUR",
+              "station": "AMS",
+              "country": "NL"
+          },
+          {
+              "id": 32,
+              "code": "CH",
+              "amount": 13.30,
+              "currency": "EUR",
+              "description": "AIRPORT PASSENGER SECURITY AND NOISE CHARGE",
+              "publishedAmount": 14.40,
+              "publishedCurrency": "CHF",
+              "station": "ZRH",
+              "country": "CH"
+          },
+          {
+              "id": 33,
+              "code": "R1",
+              "amount": 10.40,
+              "currency": "EUR",
+              "description": "EXCEPTIONAL REGULATORY CHARGE",
+              "publishedAmount": 8.90,
+              "publishedCurrency": "GBP",
+              "station": "LHR",
+              "country": "GB"
+          },
+          {
+              "id": 34,
+              "code": "RA",
+              "amount": 8.12,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE INTERNATIONAL DEPARTURE",
+              "publishedAmount": 8.12,
+              "publishedCurrency": "EUR",
+              "station": "BER",
+              "country": "DE"
+          },
+          {
+              "id": 35,
+              "code": "YR",
+              "amount": 328.00,
+              "currency": "EUR",
+              "description": "YR taxes summary"
+          },
+          {
+              "id": 36,
+              "code": "YQ",
+              "amount": 335.00,
+              "currency": "EUR",
+              "description": "YQ taxes summary"
+          },
+          {
+              "id": 37,
+              "code": "YQ",
+              "amount": 300.00,
+              "currency": "EUR",
+              "description": "YQ taxes summary"
+          },
+          {
+              "id": 38,
+              "code": "RA",
+              "amount": 8.62,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE INTERNATIONAL ARRIVAL",
+              "publishedAmount": 0.50,
+              "publishedCurrency": "EUR",
+              "station": "ZRH",
+              "country": "DE"
+          },
+          {
+              "id": 39,
+              "code": "AT",
+              "amount": 8.44,
+              "currency": "EUR",
+              "description": "PASSENGER SECURITY CHARGE",
+              "publishedAmount": 8.44,
+              "publishedCurrency": "EUR",
+              "station": "VIE",
+              "country": "AT"
+          },
+          {
+              "id": 40,
+              "code": "ZY",
+              "amount": 18.77,
+              "currency": "EUR",
+              "description": "PASSENGER SERVICE CHARGE",
+              "publishedAmount": 18.77,
+              "publishedCurrency": "EUR",
+              "station": "VIE",
+              "country": "AT"
+          },
+          {
+              "id": 41,
+              "code": "DE",
+              "amount": 18.57,
+              "currency": "EUR",
+              "description": "AIRPORT SECURITY CHARGE",
+              "publishedAmount": 8.62,
+              "publishedCurrency": "EUR",
+              "station": "BER",
+              "country": "DE"
+          }
+      ],
+      "obFeeDescs": [
+          {
+              "id": 1,
+              "amount": 15.62,
+              "currency": "EUR"
+          },
+          {
+              "id": 2,
+              "amount": 25.00,
+              "currency": "EUR"
+          },
+          {
+              "id": 3,
+              "amount": 50.00,
+              "currency": "EUR"
+          },
+          {
+              "id": 4,
+              "amount": 9.00,
+              "currency": "EUR"
+          },
+          {
+              "id": 5,
+              "amount": 15.55,
+              "currency": "EUR"
+          }
+      ],
+      "fareComponentDescs": [
+          {
+              "id": 1,
+              "governingCarrier": "LX",
+              "fareAmount": 440.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "WNCDE03",
+              "farePassengerType": "ADT",
+              "directionality": "FROM",
+              "applicablePricingCategories": "5 6 7 8 9 10 12 15 16 17 31 33",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "00",
+              "fareType": "XPS",
+              "fareTariff": "4",
+              "fareRule": "M0DE",
+              "cabinCode": "Y",
+              "segments": [
+                  {
+                      "segment": {}
+                  },
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 2,
+              "governingCarrier": "LH",
+              "fareAmount": 2084.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "GFF77WW",
+              "farePassengerType": "ADT",
+              "directionality": "FROM",
+              "applicablePricingCategories": "5 8 9 10 12 15 16 31 33",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "00",
+              "fareType": "WU",
+              "fareTariff": "4",
+              "fareRule": "ARWW",
+              "cabinCode": "S",
+              "segments": [
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 3,
+              "governingCarrier": "BR",
+              "fareAmount": 864.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "YLOWGE",
+              "farePassengerType": "ADT",
+              "directionality": "FROM",
+              "applicablePricingCategories": "3 4 5 8 9 10 12 15 16 17 31 33",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "00",
+              "fareType": "XOA",
+              "fareTariff": "4",
+              "fareRule": "DE02",
+              "cabinCode": "Y",
+              "segments": [
+                  {
+                      "segment": {}
+                  },
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 4,
+              "governingCarrier": "KL",
+              "fareAmount": 87.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "RL50MBL4",
+              "farePassengerType": "ADT",
+              "directionality": "TO",
+              "applicablePricingCategories": "3 4 5 6 7 8 9 10 12 15 16 17 23 31 33",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "00",
+              "fareType": "ERU",
+              "fareTariff": "4",
+              "fareRule": "E2L4",
+              "cabinCode": "Y",
+              "segments": [
+                  {
+                      "segment": {}
+                  },
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 5,
+              "governingCarrier": "LH",
+              "fareAmount": 2684.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "GFF77WW",
+              "farePassengerType": "ADT",
+              "directionality": "TO",
+              "applicablePricingCategories": "5 8 9 10 12 15 16 31 33",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "00",
+              "fareType": "WU",
+              "fareTariff": "4",
+              "fareRule": "ARWW",
+              "cabinCode": "S",
+              "segments": [
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 6,
+              "governingCarrier": "TK",
+              "fareAmount": 250.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "TLN2PX",
+              "farePassengerType": "ADT",
+              "directionality": "TO",
+              "applicablePricingCategories": "3 4 5 6 7 8 9 10 11 12 15 16 17 23 31 33",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "00",
+              "fareType": "XPX",
+              "fareTariff": "4",
+              "fareRule": "PEX1",
+              "cabinCode": "Y",
+              "segments": [
+                  {
+                      "segment": {}
+                  },
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 7,
+              "governingCarrier": "LH",
+              "fareAmount": 413.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "WNCDE03",
+              "farePassengerType": "ADT",
+              "directionality": "TO",
+              "applicablePricingCategories": "5 6 7 8 9 10 12 15 16 17 31 33",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "00",
+              "fareType": "XPL",
+              "fareTariff": "4",
+              "fareRule": "M0DE",
+              "cabinCode": "Y",
+              "segments": [
+                  {
+                      "segment": {}
+                  },
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 8,
+              "governingCarrier": "BR",
+              "fareAmount": 490.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "VLBU1N",
+              "farePassengerType": "ADT",
+              "negotiatedFare": true,
+              "privateFare": true,
+              "directionality": "FROM",
+              "applicablePricingCategories": "3 4 5 8 9 10 12 15 16 17 23 25 31 33 35",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "0E",
+              "fareType": "XEV",
+              "fareTariff": "901",
+              "fareRule": "DEF1",
+              "cabinCode": "Y",
+              "segments": [
+                  {
+                      "segment": {}
+                  },
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 9,
+              "governingCarrier": "LH",
+              "fareAmount": 506.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "YFF77WW",
+              "farePassengerType": "ADT",
+              "directionality": "FROM",
+              "applicablePricingCategories": "5 8 9 10 12 15 16 31 33",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "00",
+              "fareType": "EU",
+              "fareTariff": "304",
+              "fareRule": "ARWW",
+              "cabinCode": "Y",
+              "segments": [
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 10,
+              "governingCarrier": "KL",
+              "fareAmount": 87.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "RL50MBL4",
+              "farePassengerType": "ADT",
+              "directionality": "FROM",
+              "applicablePricingCategories": "3 4 5 6 7 8 9 10 12 15 16 17 23 31 33",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "00",
+              "fareType": "ERU",
+              "fareTariff": "4",
+              "fareRule": "E2L4",
+              "cabinCode": "Y",
+              "segments": [
+                  {
+                      "segment": {}
+                  },
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 11,
+              "governingCarrier": "BR",
+              "fareAmount": 390.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "VLBE1N",
+              "farePassengerType": "ADT",
+              "negotiatedFare": true,
+              "privateFare": true,
+              "directionality": "TO",
+              "applicablePricingCategories": "3 4 5 8 9 10 12 15 16 17 23 25 31 33 35",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "0E",
+              "fareType": "XEV",
+              "fareTariff": "901",
+              "fareRule": "DEF1",
+              "cabinCode": "Y",
+              "segments": [
+                  {
+                      "segment": {}
+                  },
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 12,
+              "governingCarrier": "LH",
+              "fareAmount": 1029.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "YFF77WW",
+              "farePassengerType": "ADT",
+              "directionality": "FROM",
+              "applicablePricingCategories": "5 8 9 10 12 15 16 31 33",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "00",
+              "fareType": "EU",
+              "fareTariff": "21",
+              "fareRule": "ARWW",
+              "cabinCode": "Y",
+              "segments": [
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 13,
+              "governingCarrier": "TK",
+              "fareAmount": 250.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "TLN2PX",
+              "farePassengerType": "ADT",
+              "directionality": "FROM",
+              "applicablePricingCategories": "3 4 5 6 7 8 9 10 11 12 15 16 17 23 31 33",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "00",
+              "fareType": "XPX",
+              "fareTariff": "4",
+              "fareRule": "PEX1",
+              "cabinCode": "Y",
+              "segments": [
+                  {
+                      "segment": {
+                          "surcharges": [
+                              {
+                                  "amount": 5.90,
+                                  "currency": "NUC",
+                                  "description": "MISCELLANEOUS/OTHER",
+                                  "type": "Q"
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 14,
+              "governingCarrier": "LH",
+              "fareAmount": 2686.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "GFF77WW",
+              "farePassengerType": "ADT",
+              "directionality": "TO",
+              "applicablePricingCategories": "5 8 9 10 12 15 16 31 33",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "00",
+              "fareType": "WU",
+              "fareTariff": "4",
+              "fareRule": "ARWW",
+              "cabinCode": "S",
+              "segments": [
+                  {
+                      "segment": {}
+                  },
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 15,
+              "governingCarrier": "LH",
+              "fareAmount": 413.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "WNCDE03",
+              "farePassengerType": "ADT",
+              "directionality": "FROM",
+              "applicablePricingCategories": "5 6 7 8 9 10 12 15 16 17 31 33",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "00",
+              "fareType": "XPL",
+              "fareTariff": "4",
+              "fareRule": "M0DE",
+              "cabinCode": "Y",
+              "segments": [
+                  {
+                      "segment": {}
+                  },
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 16,
+              "governingCarrier": "LX",
+              "fareAmount": 440.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "WNCDE03",
+              "farePassengerType": "ADT",
+              "directionality": "TO",
+              "applicablePricingCategories": "5 6 7 8 9 10 12 15 16 17 31 33",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "00",
+              "fareType": "XPS",
+              "fareTariff": "4",
+              "fareRule": "M0DE",
+              "cabinCode": "Y",
+              "segments": [
+                  {
+                      "segment": {}
+                  },
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 17,
+              "governingCarrier": "KL",
+              "fareAmount": 971.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "YS40BENN",
+              "farePassengerType": "ADT",
+              "directionality": "FROM",
+              "applicablePricingCategories": "8 9 10 12 15 16 17 23 31 33",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "00",
+              "fareType": "EU",
+              "fareTariff": "21",
+              "fareRule": "MLMH",
+              "cabinCode": "Y",
+              "segments": [
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 18,
+              "governingCarrier": "BR",
+              "fareAmount": 814.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "YLOWGE",
+              "farePassengerType": "ADT",
+              "directionality": "FROM",
+              "applicablePricingCategories": "3 4 5 8 9 10 12 15 16 17 31 33",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "00",
+              "fareType": "XOA",
+              "fareTariff": "4",
+              "fareRule": "DE02",
+              "cabinCode": "Y",
+              "segments": [
+                  {
+                      "segment": {}
+                  },
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 19,
+              "governingCarrier": "BR",
+              "fareAmount": 390.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "VLBE1N",
+              "farePassengerType": "ADT",
+              "negotiatedFare": true,
+              "privateFare": true,
+              "directionality": "FROM",
+              "applicablePricingCategories": "3 4 5 8 9 10 12 15 16 17 23 25 31 33 35",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "0E",
+              "fareType": "XEV",
+              "fareTariff": "901",
+              "fareRule": "DEF1",
+              "cabinCode": "Y",
+              "segments": [
+                  {
+                      "segment": {}
+                  },
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 20,
+              "governingCarrier": "BR",
+              "fareAmount": 396.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "YLOWN",
+              "farePassengerType": "ADT",
+              "directionality": "FROM",
+              "applicablePricingCategories": "3 4 5 8 9 10 12 14 15 16 17 31 33",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "00",
+              "fareType": "XOA",
+              "fareTariff": "4",
+              "fareRule": "NB02",
+              "cabinCode": "Y",
+              "segments": [
+                  {
+                      "segment": {
+                          "stopover": true,
+                          "surcharges": [
+                              {
+                                  "amount": 23.62,
+                                  "currency": "NUC",
+                                  "description": "WEEKEND",
+                                  "type": "K"
+                              }
+                          ]
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 21,
+              "governingCarrier": "OS",
+              "fareAmount": 411.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "WNCDE03",
+              "farePassengerType": "ADT",
+              "directionality": "FROM",
+              "applicablePricingCategories": "5 6 7 8 9 10 12 15 16 17 31 33",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "00",
+              "fareType": "XPL",
+              "fareTariff": "4",
+              "fareRule": "M0DE",
+              "cabinCode": "Y",
+              "segments": [
+                  {
+                      "segment": {}
+                  },
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          },
+          {
+              "id": 22,
+              "governingCarrier": "BR",
+              "fareAmount": 814.00,
+              "fareCurrency": "EUR",
+              "fareBasisCode": "YLOWGE",
+              "farePassengerType": "ADT",
+              "directionality": "TO",
+              "applicablePricingCategories": "3 4 5 8 9 10 12 15 16 17 31 33",
+              "vendorCode": "ATP",
+              "fareTypeBitmap": "00",
+              "fareType": "XOA",
+              "fareTariff": "4",
+              "fareRule": "DE02",
+              "cabinCode": "Y",
+              "segments": [
+                  {
+                      "segment": {}
+                  },
+                  {
+                      "segment": {
+                          "stopover": true
+                      }
+                  }
+              ]
+          }
+      ],
+      "validatingCarrierDescs": [
+          {
+              "id": 1,
+              "settlementMethod": "BSP",
+              "newVcxProcess": true,
+              "default": {
+                  "code": "LX"
+              },
+              "alternates": [
+                  {
+                      "code": "LH"
+                  }
+              ]
+          },
+          {
+              "id": 2,
+              "settlementMethod": "BSP",
+              "newVcxProcess": true,
+              "default": {
+                  "code": "BA"
+              }
+          },
+          {
+              "id": 3,
+              "settlementMethod": "BSP",
+              "newVcxProcess": true,
+              "default": {
+                  "code": "OS"
+              },
+              "alternates": [
+                  {
+                      "code": "LH"
+                  }
+              ]
+          },
+          {
+              "id": 4,
+              "settlementMethod": "BSP",
+              "newVcxProcess": true,
+              "default": {
+                  "code": "LX"
+              }
+          },
+          {
+              "id": 5,
+              "settlementMethod": "BSP",
+              "newVcxProcess": true,
+              "default": {
+                  "code": "TK"
+              }
+          },
+          {
+              "id": 6,
+              "settlementMethod": "BSP",
+              "newVcxProcess": true,
+              "default": {
+                  "code": "LH"
+              },
+              "alternates": [
+                  {
+                      "code": "LX"
+                  }
+              ]
+          },
+          {
+              "id": 7,
+              "settlementMethod": "BSP",
+              "newVcxProcess": true,
+              "default": {
+                  "code": "KL"
+              }
+          },
+          {
+              "id": 8,
+              "settlementMethod": "BSP",
+              "newVcxProcess": true,
+              "default": {
+                  "code": "BR"
+              }
+          },
+          {
+              "id": 9,
+              "settlementMethod": "BSP",
+              "newVcxProcess": true,
+              "default": {
+                  "code": "LH"
+              }
+          },
+          {
+              "id": 10,
+              "settlementMethod": "BSP",
+              "newVcxProcess": true,
+              "default": {
+                  "code": "OS"
+              },
+              "alternates": [
+                  {
+                      "code": "LX"
+                  }
+              ]
+          }
+      ],
+      "baggageAllowanceDescs": [
+          {
+              "id": 1,
+              "pieceCount": 1
+          },
+          {
+              "id": 2,
+              "weight": 35,
+              "unit": "kg"
+          },
+          {
+              "id": 3,
+              "weight": 30,
+              "unit": "kg"
+          },
+          {
+              "id": 4,
+              "pieceCount": 1
+          },
+          {
+              "id": 5,
+              "weight": 30,
+              "unit": "kg"
+          },
+          {
+              "id": 6,
+              "pieceCount": 0
+          },
+          {
+              "id": 7,
+              "pieceCount": 1
+          },
+          {
+              "id": 8,
+              "pieceCount": 2
+          }
+      ],
+      "legDescs": [
+          {
+              "id": 13,
+              "elapsedTime": 900,
+              "schedules": [
+                  {
+                      "ref": 6
+                  },
+                  {
+                      "ref": 9
+                  }
+              ]
+          },
+          {
+              "id": 14,
+              "elapsedTime": 1330,
+              "schedules": [
+                  {
+                      "ref": 52
+                  },
+                  {
+                      "ref": 33,
+                      "departureDateAdjustment": 1
+                  }
+              ]
+          },
+          {
+              "id": 35,
+              "elapsedTime": 1380,
+              "schedules": [
+                  {
+                      "ref": 13
+                  },
+                  {
+                      "ref": 35
+                  }
+              ]
+          },
+          {
+              "id": 36,
+              "elapsedTime": 1405,
+              "schedules": [
+                  {
+                      "ref": 28
+                  },
+                  {
+                      "ref": 9
+                  }
+              ]
+          }
+      ],
+      "itineraryGroups": [
+          {
+              "groupDescription": {
+                  "legDescriptions": [
+                      {
+                          "departureDate": "2021-10-02",
+                          "departureLocation": "BER",
+                          "arrivalLocation": "BKK"
+                      },
+                      {
+                          "departureDate": "2021-10-06",
+                          "departureLocation": "BKK",
+                          "arrivalLocation": "BER"
+                      }
+                  ]
+              },
+              "itineraries": [
+                  {
+                      "id": 1,
+                      "pricingSource": "ADVJR1",
+                      "legs": [
+                          {
+                              "ref": 36
+                          },
+                          {
+                              "ref": 14
+                          }
+                      ],
+                      "pricingInformation": [
+                          {
+                              "pricingSubsource": "HPIS",
+                              "fare": {
+                                  "validatingCarrierCode": "KL",
+                                  "vita": true,
+                                  "eTicketable": true,
+                                  "lastTicketDate": "2021-10-02",
+                                  "lastTicketTime": "09:05",
+                                  "governingCarriers": "KL KL",
+                                  "passengerInfoList": [
+                                      {
+                                          "passengerInfo": {
+                                              "passengerType": "ADT",
+                                              "passengerNumber": 2,
+                                              "nonRefundable": true,
+                                              "fareComponents": [
+                                                  {
+                                                      "ref": 10,
+                                                      "segments": [
+                                                          {
+                                                              "segment": {
+                                                                  "bookingCode": "L",
+                                                                  "cabinCode": "Y",
+                                                                  "mealCode": "S",
+                                                                  "seatsAvailable": 9
+                                                              }
+                                                          },
+                                                          {
+                                                              "segment": {
+                                                                  "bookingCode": "R",
+                                                                  "cabinCode": "Y",
+                                                                  "mealCode": "M",
+                                                                  "seatsAvailable": 9,
+                                                                  "availabilityBreak": true
+                                                              }
+                                                          }
+                                                      ]
+                                                  },
+                                                  {
+                                                      "ref": 4,
+                                                      "segments": [
+                                                          {
+                                                              "segment": {
+                                                                  "bookingCode": "R",
+                                                                  "cabinCode": "Y",
+                                                                  "mealCode": "M",
+                                                                  "seatsAvailable": 9
+                                                              }
+                                                          },
+                                                          {
+                                                              "segment": {
+                                                                  "bookingCode": "L",
+                                                                  "cabinCode": "Y",
+                                                                  "mealCode": "S",
+                                                                  "seatsAvailable": 9,
+                                                                  "availabilityBreak": true
+                                                              }
+                                                          }
+                                                      ]
+                                                  }
+                                              ],
+                                              "taxes": [
+                                                  {
+                                                      "ref": 21
+                                                  },
+                                                  {
+                                                      "ref": 5
+                                                  },
+                                                  {
+                                                      "ref": 23
+                                                  },
+                                                  {
+                                                      "ref": 22
+                                                  },
+                                                  {
+                                                      "ref": 12
+                                                  },
+                                                  {
+                                                      "ref": 12
+                                                  },
+                                                  {
+                                                      "ref": 46
+                                                  },
+                                                  {
+                                                      "ref": 46
+                                                  },
+                                                  {
+                                                      "ref": 28
+                                                  },
+                                                  {
+                                                      "ref": 51
+                                                  },
+                                                  {
+                                                      "ref": 35
+                                                  },
+                                                  {
+                                                      "ref": 40
+                                                  },
+                                                  {
+                                                      "ref": 9
+                                                  },
+                                                  {
+                                                      "ref": 39
+                                                  },
+                                                  {
+                                                      "ref": 55
+                                                  },
+                                                  {
+                                                      "ref": 25
+                                                  },
+                                                  {
+                                                      "ref": 20
+                                                  }
+                                              ],
+                                              "taxSummaries": [
+                                                  {
+                                                      "ref": 29
+                                                  },
+                                                  {
+                                                      "ref": 11
+                                                  },
+                                                  {
+                                                      "ref": 21
+                                                  },
+                                                  {
+                                                      "ref": 14
+                                                  },
+                                                  {
+                                                      "ref": 20
+                                                  },
+                                                  {
+                                                      "ref": 4
+                                                  },
+                                                  {
+                                                      "ref": 24
+                                                  },
+                                                  {
+                                                      "ref": 6
+                                                  },
+                                                  {
+                                                      "ref": 5
+                                                  },
+                                                  {
+                                                      "ref": 9
+                                                  }
+                                              ],
+                                              "obFees": [
+                                                  {
+                                                      "ref": 4
+                                                  }
+                                              ],
+                                              "currencyConversion": {
+                                                  "from": "EUR",
+                                                  "to": "EUR",
+                                                  "exchangeRateUsed": 1.00000
+                                              },
+                                              "passengerTotalFare": {
+                                                  "totalFare": 449.57,
+                                                  "totalTaxAmount": 351.57,
+                                                  "currency": "EUR",
+                                                  "baseFareAmount": 98.00,
+                                                  "baseFareCurrency": "EUR",
+                                                  "equivalentAmount": 98.00,
+                                                  "equivalentCurrency": "EUR",
+                                                  "constructionAmount": 115.77,
+                                                  "constructionCurrency": "NUC"
+                                              },
+                                              "baggageInformation": [
+                                                  {
+                                                      "provisionType": "A",
+                                                      "airlineCode": "KL",
+                                                      "segments": [
+                                                          {
+                                                              "id": 0
+                                                          },
+                                                          {
+                                                              "id": 1
+                                                          }
+                                                      ],
+                                                      "allowance": {
+                                                          "ref": 6
+                                                      }
+                                                  },
+                                                  {
+                                                      "provisionType": "A",
+                                                      "airlineCode": "KL",
+                                                      "segments": [
+                                                          {
+                                                              "id": 2
+                                                          },
+                                                          {
+                                                              "id": 3
+                                                          }
+                                                      ],
+                                                      "allowance": {
+                                                          "ref": 6
+                                                      }
+                                                  }
+                                              ],
+                                              "penaltiesInfo": {
+                                                  "penalties": [
+                                                      {
+                                                          "type": "Refund",
+                                                          "applicability": "Before",
+                                                          "refundable": false
+                                                      },
+                                                      {
+                                                          "type": "Refund",
+                                                          "applicability": "After",
+                                                          "refundable": false
+                                                      },
+                                                      {
+                                                          "type": "Exchange",
+                                                          "applicability": "Before",
+                                                          "changeable": true,
+                                                          "amount": 0,
+                                                          "currency": "EUR"
+                                                      },
+                                                      {
+                                                          "type": "Exchange",
+                                                          "applicability": "After",
+                                                          "changeable": true,
+                                                          "amount": 0,
+                                                          "currency": "EUR"
+                                                      }
+                                                  ]
+                                              }
+                                          }
+                                      }
+                                  ],
+                                  "totalFare": {
+                                      "totalPrice": 899.14,
+                                      "totalTaxAmount": 703.14,
+                                      "currency": "EUR",
+                                      "baseFareAmount": 196.00,
+                                      "baseFareCurrency": "EUR",
+                                      "constructionAmount": 231.54,
+                                      "constructionCurrency": "NUC",
+                                      "equivalentAmount": 196.00,
+                                      "equivalentCurrency": "EUR"
+                                  },
+                                  "validatingCarriers": [
+                                      {
+                                          "ref": 7
+                                      }
+                                  ]
+                              }
+                          },
+                          {
+                              "pricingSubsource": "SPMIP",
+                              "flexibleFare": 1,
+                              "fare": {
+                                  "validatingCarrierCode": "KL",
+                                  "vita": true,
+                                  "eTicketable": true,
+                                  "lastTicketDate": "2021-10-02",
+                                  "lastTicketTime": "09:05",
+                                  "governingCarriers": "KL KL",
+                                  "passengerInfoList": [
+                                      {
+                                          "passengerInfo": {
+                                              "passengerType": "ADT",
+                                              "passengerNumber": 2,
+                                              "nonRefundable": true,
+                                              "fareComponents": [
+                                                  {
+                                                      "ref": 10,
+                                                      "segments": [
+                                                          {
+                                                              "segment": {
+                                                                  "bookingCode": "L",
+                                                                  "cabinCode": "Y",
+                                                                  "mealCode": "S",
+                                                                  "seatsAvailable": 9
+                                                              }
+                                                          },
+                                                          {
+                                                              "segment": {
+                                                                  "bookingCode": "R",
+                                                                  "cabinCode": "Y",
+                                                                  "mealCode": "M",
+                                                                  "seatsAvailable": 9,
+                                                                  "availabilityBreak": true
+                                                              }
+                                                          }
+                                                      ]
+                                                  },
+                                                  {
+                                                      "ref": 4,
+                                                      "segments": [
+                                                          {
+                                                              "segment": {
+                                                                  "bookingCode": "R",
+                                                                  "cabinCode": "Y",
+                                                                  "mealCode": "M",
+                                                                  "seatsAvailable": 9
+                                                              }
+                                                          },
+                                                          {
+                                                              "segment": {
+                                                                  "bookingCode": "L",
+                                                                  "cabinCode": "Y",
+                                                                  "mealCode": "S",
+                                                                  "seatsAvailable": 9,
+                                                                  "availabilityBreak": true
+                                                              }
+                                                          }
+                                                      ]
+                                                  }
+                                              ],
+                                              "taxes": [
+                                                  {
+                                                      "ref": 21
+                                                  },
+                                                  {
+                                                      "ref": 5
+                                                  },
+                                                  {
+                                                      "ref": 23
+                                                  },
+                                                  {
+                                                      "ref": 22
+                                                  },
+                                                  {
+                                                      "ref": 12
+                                                  },
+                                                  {
+                                                      "ref": 12
+                                                  },
+                                                  {
+                                                      "ref": 46
+                                                  },
+                                                  {
+                                                      "ref": 46
+                                                  },
+                                                  {
+                                                      "ref": 28
+                                                  },
+                                                  {
+                                                      "ref": 51
+                                                  },
+                                                  {
+                                                      "ref": 35
+                                                  },
+                                                  {
+                                                      "ref": 40
+                                                  },
+                                                  {
+                                                      "ref": 9
+                                                  },
+                                                  {
+                                                      "ref": 39
+                                                  },
+                                                  {
+                                                      "ref": 55
+                                                  },
+                                                  {
+                                                      "ref": 25
+                                                  },
+                                                  {
+                                                      "ref": 20
+                                                  }
+                                              ],
+                                              "taxSummaries": [
+                                                  {
+                                                      "ref": 29
+                                                  },
+                                                  {
+                                                      "ref": 11
+                                                  },
+                                                  {
+                                                      "ref": 21
+                                                  },
+                                                  {
+                                                      "ref": 14
+                                                  },
+                                                  {
+                                                      "ref": 20
+                                                  },
+                                                  {
+                                                      "ref": 4
+                                                  },
+                                                  {
+                                                      "ref": 24
+                                                  },
+                                                  {
+                                                      "ref": 6
+                                                  },
+                                                  {
+                                                      "ref": 5
+                                                  },
+                                                  {
+                                                      "ref": 9
+                                                  }
+                                              ],
+                                              "obFees": [
+                                                  {
+                                                      "ref": 4
+                                                  }
+                                              ],
+                                              "currencyConversion": {
+                                                  "from": "EUR",
+                                                  "to": "EUR",
+                                                  "exchangeRateUsed": 1.00000
+                                              },
+                                              "passengerTotalFare": {
+                                                  "totalFare": 449.57,
+                                                  "totalTaxAmount": 351.57,
+                                                  "currency": "EUR",
+                                                  "baseFareAmount": 98.00,
+                                                  "baseFareCurrency": "EUR",
+                                                  "equivalentAmount": 98.00,
+                                                  "equivalentCurrency": "EUR",
+                                                  "constructionAmount": 115.77,
+                                                  "constructionCurrency": "NUC"
+                                              },
+                                              "baggageInformation": [
+                                                  {
+                                                      "provisionType": "A",
+                                                      "airlineCode": "KL",
+                                                      "segments": [
+                                                          {
+                                                              "id": 0
+                                                          },
+                                                          {
+                                                              "id": 1
+                                                          }
+                                                      ],
+                                                      "allowance": {
+                                                          "ref": 6
+                                                      }
+                                                  },
+                                                  {
+                                                      "provisionType": "A",
+                                                      "airlineCode": "KL",
+                                                      "segments": [
+                                                          {
+                                                              "id": 2
+                                                          },
+                                                          {
+                                                              "id": 3
+                                                          }
+                                                      ],
+                                                      "allowance": {
+                                                          "ref": 6
+                                                      }
+                                                  }
+                                              ],
+                                              "penaltiesInfo": {
+                                                  "penalties": [
+                                                      {
+                                                          "type": "Refund",
+                                                          "applicability": "Before",
+                                                          "refundable": false
+                                                      },
+                                                      {
+                                                          "type": "Refund",
+                                                          "applicability": "After",
+                                                          "refundable": false
+                                                      },
+                                                      {
+                                                          "type": "Exchange",
+                                                          "applicability": "Before",
+                                                          "changeable": true,
+                                                          "amount": 0,
+                                                          "currency": "EUR"
+                                                      },
+                                                      {
+                                                          "type": "Exchange",
+                                                          "applicability": "After",
+                                                          "changeable": true,
+                                                          "amount": 0,
+                                                          "currency": "EUR"
+                                                      }
+                                                  ]
+                                              }
+                                          }
+                                      }
+                                  ],
+                                  "totalFare": {
+                                      "totalPrice": 899.14,
+                                      "totalTaxAmount": 703.14,
+                                      "currency": "EUR",
+                                      "baseFareAmount": 196.00,
+                                      "baseFareCurrency": "EUR",
+                                      "constructionAmount": 231.54,
+                                      "constructionCurrency": "NUC",
+                                      "equivalentAmount": 196.00,
+                                      "equivalentCurrency": "EUR"
+                                  },
+                                  "validatingCarriers": [
+                                      {
+                                          "ref": 7
+                                      }
+                                  ]
+                              }
+                          },
+                          {
+                              "pricingSubsource": "SPMIP",
+                              "flexibleFare": 2,
+                              "fare": {
+                                  "validatingCarrierCode": "KL",
+                                  "vita": true,
+                                  "eTicketable": true,
+                                  "lastTicketDate": "2021-10-02",
+                                  "lastTicketTime": "09:05",
+                                  "governingCarriers": "KL KL",
+                                  "passengerInfoList": [
+                                      {
+                                          "passengerInfo": {
+                                              "passengerType": "ADT",
+                                              "passengerNumber": 2,
+                                              "nonRefundable": true,
+                                              "fareComponents": [
+                                                  {
+                                                      "ref": 10,
+                                                      "segments": [
+                                                          {
+                                                              "segment": {
+                                                                  "bookingCode": "L",
+                                                                  "cabinCode": "Y",
+                                                                  "mealCode": "S",
+                                                                  "seatsAvailable": 9
+                                                              }
+                                                          },
+                                                          {
+                                                              "segment": {
+                                                                  "bookingCode": "R",
+                                                                  "cabinCode": "Y",
+                                                                  "mealCode": "M",
+                                                                  "seatsAvailable": 9,
+                                                                  "availabilityBreak": true
+                                                              }
+                                                          }
+                                                      ]
+                                                  },
+                                                  {
+                                                      "ref": 4,
+                                                      "segments": [
+                                                          {
+                                                              "segment": {
+                                                                  "bookingCode": "R",
+                                                                  "cabinCode": "Y",
+                                                                  "mealCode": "M",
+                                                                  "seatsAvailable": 9
+                                                              }
+                                                          },
+                                                          {
+                                                              "segment": {
+                                                                  "bookingCode": "L",
+                                                                  "cabinCode": "Y",
+                                                                  "mealCode": "S",
+                                                                  "seatsAvailable": 9,
+                                                                  "availabilityBreak": true
+                                                              }
+                                                          }
+                                                      ]
+                                                  }
+                                              ],
+                                              "taxes": [
+                                                  {
+                                                      "ref": 21
+                                                  },
+                                                  {
+                                                      "ref": 5
+                                                  },
+                                                  {
+                                                      "ref": 23
+                                                  },
+                                                  {
+                                                      "ref": 22
+                                                  },
+                                                  {
+                                                      "ref": 12
+                                                  },
+                                                  {
+                                                      "ref": 12
+                                                  },
+                                                  {
+                                                      "ref": 46
+                                                  },
+                                                  {
+                                                      "ref": 46
+                                                  },
+                                                  {
+                                                      "ref": 28
+                                                  },
+                                                  {
+                                                      "ref": 51
+                                                  },
+                                                  {
+                                                      "ref": 35
+                                                  },
+                                                  {
+                                                      "ref": 40
+                                                  },
+                                                  {
+                                                      "ref": 9
+                                                  },
+                                                  {
+                                                      "ref": 39
+                                                  },
+                                                  {
+                                                      "ref": 55
+                                                  },
+                                                  {
+                                                      "ref": 25
+                                                  },
+                                                  {
+                                                      "ref": 20
+                                                  }
+                                              ],
+                                              "taxSummaries": [
+                                                  {
+                                                      "ref": 29
+                                                  },
+                                                  {
+                                                      "ref": 11
+                                                  },
+                                                  {
+                                                      "ref": 21
+                                                  },
+                                                  {
+                                                      "ref": 14
+                                                  },
+                                                  {
+                                                      "ref": 20
+                                                  },
+                                                  {
+                                                      "ref": 4
+                                                  },
+                                                  {
+                                                      "ref": 24
+                                                  },
+                                                  {
+                                                      "ref": 6
+                                                  },
+                                                  {
+                                                      "ref": 5
+                                                  },
+                                                  {
+                                                      "ref": 9
+                                                  }
+                                              ],
+                                              "obFees": [
+                                                  {
+                                                      "ref": 4
+                                                  }
+                                              ],
+                                              "currencyConversion": {
+                                                  "from": "EUR",
+                                                  "to": "EUR",
+                                                  "exchangeRateUsed": 1.00000
+                                              },
+                                              "passengerTotalFare": {
+                                                  "totalFare": 449.57,
+                                                  "totalTaxAmount": 351.57,
+                                                  "currency": "EUR",
+                                                  "baseFareAmount": 98.00,
+                                                  "baseFareCurrency": "EUR",
+                                                  "equivalentAmount": 98.00,
+                                                  "equivalentCurrency": "EUR",
+                                                  "constructionAmount": 115.77,
+                                                  "constructionCurrency": "NUC"
+                                              },
+                                              "baggageInformation": [
+                                                  {
+                                                      "provisionType": "A",
+                                                      "airlineCode": "KL",
+                                                      "segments": [
+                                                          {
+                                                              "id": 0
+                                                          },
+                                                          {
+                                                              "id": 1
+                                                          }
+                                                      ],
+                                                      "allowance": {
+                                                          "ref": 6
+                                                      }
+                                                  },
+                                                  {
+                                                      "provisionType": "A",
+                                                      "airlineCode": "KL",
+                                                      "segments": [
+                                                          {
+                                                              "id": 2
+                                                          },
+                                                          {
+                                                              "id": 3
+                                                          }
+                                                      ],
+                                                      "allowance": {
+                                                          "ref": 6
+                                                      }
+                                                  }
+                                              ],
+                                              "penaltiesInfo": {
+                                                  "penalties": [
+                                                      {
+                                                          "type": "Refund",
+                                                          "applicability": "Before",
+                                                          "refundable": false
+                                                      },
+                                                      {
+                                                          "type": "Refund",
+                                                          "applicability": "After",
+                                                          "refundable": false
+                                                      },
+                                                      {
+                                                          "type": "Exchange",
+                                                          "applicability": "Before",
+                                                          "changeable": true,
+                                                          "amount": 0,
+                                                          "currency": "EUR"
+                                                      },
+                                                      {
+                                                          "type": "Exchange",
+                                                          "applicability": "After",
+                                                          "changeable": true,
+                                                          "amount": 0,
+                                                          "currency": "EUR"
+                                                      }
+                                                  ]
+                                              }
+                                          }
+                                      }
+                                  ],
+                                  "totalFare": {
+                                      "totalPrice": 899.14,
+                                      "totalTaxAmount": 703.14,
+                                      "currency": "EUR",
+                                      "baseFareAmount": 196.00,
+                                      "baseFareCurrency": "EUR",
+                                      "constructionAmount": 231.54,
+                                      "constructionCurrency": "NUC",
+                                      "equivalentAmount": 196.00,
+                                      "equivalentCurrency": "EUR"
+                                  },
+                                  "validatingCarriers": [
+                                      {
+                                          "ref": 7
+                                      }
+                                  ]
+                              }
+                          }
+                      ],
+                      "diversitySwapper": {
+                          "weighedPrice": 2504.113
+                      }
+                  }
+              ]
+          }
+      ]
+  }
+}
